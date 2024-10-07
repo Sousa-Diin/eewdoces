@@ -1,0 +1,29 @@
+CREATE ROLE "eewdoces" WITH
+	LOGIN
+	NOSUPERUSER
+	CREATEDB
+	NOCREATEROLE
+	INHERIT
+	NOREPLICATION
+	NOBYPASSRLS
+	CONNECTION LIMIT -1
+	PASSWORD 'xxxxxx';
+
+CREATE DATABASE "EEWDoces"
+    WITH
+    OWNER = eewdoces
+    ENCODING = 'UTF8'
+    LOCALE_PROVIDER = 'libc'
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+CREATE TABLE IF NOT EXISTS public.client (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  name TEXT NOT NULL,
+  cel TEXT NOT NULL,
+  address TEXT NOT NULL
+
+);
+
+INSERT INTO client (name,cel, address) 
+VALUES ('E&WDoces','(35)9 9772-3497','Jdm. Gloria');
