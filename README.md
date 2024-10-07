@@ -6,6 +6,7 @@
 > Pensando em prever e controlar quanto de materia prima necessaria para cada massa e o material necessario, 
 > com isso sendo possivél prever a quantidade exata de material e materia prima.
 
+#
 ______________________________________
 |ENTIDAES | PRIMARY KEY| FOREIGN KEY |
 |---------|------------|-------------|
@@ -15,12 +16,16 @@ ______________________________________
 | ORDERS | ID | `client_ID`, `supplier_ID` e `order_ID` |
 | TRANSACTION | ID | `Order_ID` |
 | ORDER_PRODUCT | ID | `Order_ID` e `Product_ID` |
+______________________________________
+#
 
 
-```sql
-  SELECT * FROM (name, tel, addres) supplier;
-```
 ## 📌 🚛🏢 Fornecedores
+
+>QUERY
+```sql
+  SELECT * FROM supplier;
+```
 
 >|ID| Name | Tel | Address |
 >|---|------|-----|---------|
@@ -30,6 +35,10 @@ ______________________________________
 >|498e |E&WDoces |(35)9 9772-75349728 | Lavras - MG |
 
 ## 📌🧔🏽 Clientes
+>QUERY
+```sql
+  SELECT * FROM  clients;
+```
 
 >|ID| Name | Tel | Address |
 >|---|------|-----|---------|
@@ -40,6 +49,11 @@ ______________________________________
 
 ## 📌📦 Produtos
 
+>QUERY
+```sql
+  SELECT * FROM  products;
+```
+
 >| ID | Name | Preco | Estoque |
 >|------|-----|---------|----|
 >|adec | Brigadeiro  | R$12,00 | 96
@@ -48,6 +62,11 @@ ______________________________________
 
 ## 📌📜 Pedidos
 
+>QUERY
+```sql
+  SELECT * FROM  orders;
+```
+
 >| Order_ID | Client_ID | Supplier_ID | Date_Order | Type_Order | Total | Status
 >|------|-----|---------|----|-----|----|------|
 >|4fa60978 |a210e003169e | 498e |2024-10-03 09:16:08 | venda  | R$240,00  | aguardando
@@ -55,6 +74,11 @@ ______________________________________
 >|0de9d4ec |809cbdcda91a | 41f9 |2024-09-15 00:50:05 | compra | R$53,73 | pendente
 
 ## 📌📜 ↔ 📦 pedido_Produto
+
+>QUERY
+```sql
+  SELECT * FROM  order_product;
+```
 
 >| Order_ID | Product_ID | Preco_untario | Quantidade |
 >|------|-----|---------|----|
@@ -65,6 +89,11 @@ ______________________________________
 
 
 ## 📌 💲💳 Transações
+
+>QUERY
+```sql
+  SELECT * FROM  transactions;
+```
 
 >|ID| Order_ID | Valor_pago | Metodo_pago | Status_pagamento | Date_transaction |
 >|---|------|-----|---------|----|-----|
