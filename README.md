@@ -10,12 +10,11 @@
 ______________________________________
 |ENTIDAES | PRIMARY KEY| FOREIGN KEY |
 |---------|------------|-------------|
-| SUPPLIER | ID | NULL |
-| CLIENT | ID | NULL |
-| PRODUCT | ID | NULL |
-| ORDERS | ID | `client_ID`, `supplier_ID` e `order_ID` |
-| TRANSACTION | ID | `Order_ID` |
-| ORDER_PRODUCT | ID | `Order_ID` e `Product_ID` |
+| PEOPLE | ID | NULL |
+| PRODUCTS | ID | NULL |
+| ORDER_PRODUCT | ID | `order_ID` e `product_ID` |
+| ORDERS | ID |  `order_ID` e `people_ID`|
+| TRANSACTION | ID | `order_ID` |
 ______________________________________
 #
 
@@ -87,5 +86,5 @@ ______________________________________
 >|ID| Order_ID | Valor_pago | Metodo_pago | Status_pagamento | Date_transaction |
 >|---|------|-----|---------|----|-----|
 >| |4fa60978 | R$240,00  | pix | aguardando |2024-10-03 09:16:08
->| |dc106d3a | R$177,26  | cartão |pago | 2024-10-04 22:59:17
+>| |dc106d3a | R$139,8  | cartão |pago | 2024-10-04 22:59:17
 >| |0de9d4ec | R$53,73 | dinheiro |pendente | 2024-09-15 00:50:05
