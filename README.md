@@ -20,32 +20,21 @@ ______________________________________
 #
 
 
-## 📌 🚛🏢 Fornecedores
+## 📌 🚛🏢 Fornecedores and 🧔🏽 Clientes
 
 >QUERY
 ```sql
-  SELECT * FROM supplier;
+  SELECT * FROM people;
 ```
 
->|ID| Name | Tel | Address |
->|---|------|-----|---------|
->|a0c4 |Supermecados BH |(31)3117-2602 | Av.Vaz Monteiro, 325 - centro |
->|48f7 |Embalagem Botelho |(35)3822-2859 | Rua Dr. Alvaro Botelho - centro |
->|41f9|Casa da Embalagem |(35)3821-7528 | Rua Firmino Sales - centro |
->|498e |E&WDoces |(35)9 9772-75349728 | Lavras - MG |
-
-## 📌🧔🏽 Clientes
->QUERY
-```sql
-  SELECT * FROM  clients;
-```
-
->|ID| Name | Tel | Address |
->|---|------|-----|---------|
->|c4b6df6e937d|Client_default |(35) 9 0000-1111 | Jardim Glória |
->|809cbdcda91a |Person_name_1 |(35) 9 0000-1111 | Belizandra |
->|e7585564439a |Person_name_2 |(35) 9 0000-1111 | Rua Alvaro Botelho - centro |
->|a210e003169e |E&WDoces |(35)9 9772-75349728 | Lavras - MG |
+>|ID| Name |Type_person| Tel | Address |
+>|---|------|-----|---------|----------|
+>|a0c4 |Supermecados BH |  supplier |(31)3117-2602 | Av.Vaz Monteiro, 325 - centro |
+>|48f7 |Embalagem Botelho | supplier |(35)3822-2859 | Rua Dr. Alvaro Botelho - centro |
+>|41f9|Casa da Embalagem | supplier |(35)3821-7528 | Rua Firmino Sales - centro |
+>|498e |E&WDoces | both |(35)9 9772-3497 | Lavras - MG |
+>|c4b6df6e937d|Client_default | client |(35) 9 0000-1111 | Jardim Glória |
+>|e7585564439a |Person_name_1 | client |(35) 9 0000-1111 | Rua Alvaro Botelho - centro |
 
 ## 📌📦 Produtos
 
@@ -67,11 +56,11 @@ ______________________________________
   SELECT * FROM  orders;
 ```
 
->| Order_ID | Client_ID | Supplier_ID | Date_Order | Type_Order | Total | Status
->|------|-----|---------|----|-----|----|------|
->|4fa60978 |a210e003169e | 498e |2024-10-03 09:16:08 | venda  | R$240,00  | aguardando
->|dc106d3a |e7585564439a | 48f7 |2024-10-04 22:59:17 | compra | R$139,8  | pago
->|0de9d4ec |809cbdcda91a | 41f9 |2024-09-15 00:50:05 | compra | R$53,73 | pendente
+>| Order_ID | people_ID | Date_Order | Type_Order | Total | Status
+>|------|-----|---------|----|-----|----|
+>|4fa60978 | 498e |2024-10-03 09:16:08 | venda  | R$240,00  | aguardando
+>|dc106d3a | 48f7 |2024-10-04 22:59:17 | compra | R$139,8  | pago
+>|0de9d4ec | 41f9 |2024-09-15 00:50:05 | compra | R$53,73 | pendente
 
 ## 📌📜 ↔ 📦 pedido_Produto
 
