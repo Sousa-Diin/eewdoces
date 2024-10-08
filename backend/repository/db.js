@@ -1,18 +1,18 @@
+import dotenv from 'dotenv';
+dotenv.config({ path: '../.env' });  //ajuste do caminho [BUG] corrigir e configurar arquivo dotenv(env) #16
+
 import pg from 'pg';
-import 'dotenv/config.js';
 
 const { Pool } = pg;
 
 const pool = new Pool({
-  host:'localhost',
-  port: 5432,
-  user: 'eewdoces',
-  password:'E317035we',
-  database: 'EEWDoces',
+  host: process.env.HOST,
+  port: process.env.PORT,
+  user: process.env.USER,
+  password: process.env.PASSWORD,
+  database: process.env.DATABASE,
 });
 
-console.log((await pool.query('SELECT * FROM client')).rows);
-console.log(`Dotenv: ${process.env.PASSWORD}`);
-
+console.log((await pool.query('SELECT * FROM clients')).rows);
 
 export default pool;
