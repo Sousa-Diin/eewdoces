@@ -13,6 +13,8 @@ const pool = new Pool({
   database: process.env.DATABASE,
 });
 
-console.log((await pool.query('SELECT * FROM clients')).rows);
+const table = 'products';
+
+console.log((await pool.query(`SELECT * FROM ${table}`)).rows);
 
 export default pool;
