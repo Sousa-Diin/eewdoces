@@ -13,8 +13,5 @@ const pool = new Pool({
   database: process.env.DATABASE,
 });
 
-const table = 'orders';
-
-console.log((await pool.query(`SELECT * FROM ${table}`)).rows);
 
 export default pool;
