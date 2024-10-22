@@ -72,15 +72,17 @@
   }
 
   .login-form button {
-    padding: 5px;
-    font-size: 32px;
-    background-color: #4B6382; /* Cor do botão em harmonia com E&WDoces */
+    padding: 3px;
+    background-color: #4B6382; 
     color: white;
     border: 2px solid #E3C39D;
     border-radius: 15px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition:  0.3s;
     width: 100%;
+   
+    height: 40px; 
+    font-size: 1rem;
   }
 
   .login-footer {

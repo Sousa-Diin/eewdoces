@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
-import '../../src/App.css'
+import { useNavigate } from 'react-router-dom';
+import '../../../src/App.css'
 
 function Login() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Lógica para login
+    navigate('/eewdoces/main')
   };
 
   return (
-    <div className="login-container">
+    <section className="container">
+      <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit} className="login-form">
         <input
@@ -30,6 +34,7 @@ function Login() {
         <footer className='login-footer'><a>cadastrar</a><a>esqueci minha Senha</a></footer>
       </form>
     </div>
+    </section>
   );
 }
 

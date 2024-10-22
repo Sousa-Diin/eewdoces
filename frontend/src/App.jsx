@@ -1,11 +1,11 @@
 import './style.css'
-import Login from './assets/Login.jsx';
+import AppRouter from './AppRouter.jsx';
 
 function App() {
  
   return (
-    <div className="container">
-     <Login />
+    <div>
+     <AppRouter/>
     </div>
   );
 }
