@@ -99,7 +99,9 @@
 /* Responsividade para smartphones */
 @media only screen and (min-width: 190px) and (max-width: 650px) {
   *{
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
   }
   .container {
     display: flex;
@@ -118,7 +120,7 @@
 .login-container {
  
   width: 90%;
-  height: 70%;
+  height: 55%;
   margin: 0 auto;
   padding: 30px;
   background-color: rgb(205, 213, 219,.8);
@@ -146,12 +148,12 @@
 
 
 .login-footer {
-  width: 96%;
+  width: 98%;
   display: flex;
   margin-top: 5px;
   justify-content: space-around;
   color: #4b6382;
-  font-size: x-small;
+  font-size: small;
 }
 
 .login-footer a{
