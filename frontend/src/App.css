@@ -202,7 +202,7 @@
   }
 
   .login-container h2 {
-    font-size: 20px; /* Tamanho do título ajustado para smartphones */
+    font-size: 2em; /* Tamanho do título ajustado para smartphones */
   }
   
 }
