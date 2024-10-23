@@ -1,12 +1,15 @@
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #CDD5DB;
+  
+}
+
 @media only screen and (min-width: 190px) and (max-width: 650px) {
-  .main-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    min-width: 100dvw;
-    min-height: 100dvh;
-    background-color: #cdd5db;
-    
-  }
+  
+ 
 }

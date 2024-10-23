@@ -14,8 +14,8 @@ function Login() {
   };
 
   return (
-    <section className="container">
-      <div className="login-container">
+    <section className="container-login">
+      <div className="login-container-div">
       <h2>Login</h2>
       <form onSubmit={handleSubmit} className="login-form">
         <input

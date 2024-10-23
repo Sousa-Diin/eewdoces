@@ -1,18 +1,21 @@
 import './MenuPrincipal.css';
+import iconPlus from '../../assets/icons/plus-circle-fill.svg';
 
 function MenuPrincipal (){
+
   return (
     <footer className='menu-bottom'>
-      <section className='menu-bottom-section'>      
-        <ul className='menu-bottom-section-ul'>
-          <li className='menu-bottom-section-ul-li'>Loja</li>
-          <li className='menu-bottom-section-ul-li'>Compras</li>
-        </ul>
-        <ul className='menu-bottom-section-ul'>
-          <li className='menu-bottom-section-ul-li'>Vendas</li>
-          <li className='menu-bottom-section-ul-li'>Menu</li>
-        </ul>  
-      </section>
+      <ul className='menu-bottom-ul'>
+        <div className='menu-bottom-div'>
+          <span className='menu-bottom-ul-span'>Loja</span>
+          <span className='menu-bottom-ul-span'>Compras</span>
+        </div>
+        <div className='menu-bottom-div'>
+          <span className='menu-bottom-ul-span'>Vendas</span>
+          <span className='menu-bottom-ul-span'>Menu</span>
+        </div>
+        <button className='plus-circle-fill'><img  src={iconPlus}/></button>
+      </ul>   
     </footer>
   );
 }

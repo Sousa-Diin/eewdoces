@@ -3,7 +3,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
-  .container {
+  .container-login {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -17,12 +17,12 @@
     background-repeat: no-repeat; /* Evita a repetição da imagem */ height: 100vh; /* Altura total da janela de visualização */
   }
 
-  .login-container, .login-form {
+  .login-container-div, .login-form {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
   }
-  .login-container { 
+  .login-container-div { 
     
     width: 90%;
     min-height: 400px;
@@ -55,7 +55,7 @@
   .login-form input::placeholder{
     color: #cdd5db;
   }
-  .login-container {
+  .login-container-div {
     color: #cdd5db;
     width: 90%;
     background-color: rgb(205, 213, 219,.5);
@@ -65,7 +65,7 @@
     box-sizing: border-box;
   }
 
-  .login-container h2 {
+  .login-container-div h2 {
     margin-bottom: 20px;
     font-size: 22px;
     color: #fff;
@@ -103,7 +103,7 @@
     margin: 0;
     box-sizing: border-box;
   }
-  .container {
+  .container-login {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -117,7 +117,7 @@
     background-repeat: no-repeat; /* Evita a repetição da imagem */ height: 100vh; /* Altura total da janela de visualização */
   }
   /* Estilo para o container de login */
-.login-container {
+.login-container-div {
  
   width: 90%;
   height: 55%;
@@ -132,7 +132,7 @@
 }
 
 /* Estilo para o título */
-.login-container h2 {
+.login-container-div h2 {
   margin-bottom: 20px;
   font-size: 22px;
   color: #fff;
@@ -199,11 +199,11 @@
     padding: 10px; /* Padding menor em telas pequenas */
   }
 
-  .login-container {
+  .login-container-div {
     padding: 20px;  /*Reduz o padding em telas menores */
   }
 
-  .login-container h2 {
+  .login-container-div h2 {
     font-size: 2em; /* Tamanho do título ajustado para smartphones */
   }
   

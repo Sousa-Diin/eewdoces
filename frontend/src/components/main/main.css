@@ -1,0 +1,67 @@
+.card-win {
+  width: 98dvw;
+  border-radius: 30px;
+  height: 33%;
+  margin: 0 auto;
+  box-shadow: 3px 2px 10px 5px rgb(0,0,0,.2);
+  background-color: #F2F2F2;
+}
+
+.header-win {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-win span {
+  color: #4B6382;
+}
+
+section.header-win > pre { 
+  
+  background-color: aquamarine;
+  padding: 0;
+  font-size: small;
+  color: rgb(0,0,0,.5);
+}
+
+.header-win  span, aside.container-arrow-detail  pre {
+  margin-top: 18px;
+}
+
+aside.container-arrow-detail  pre { color: rgb(0,0,0,.6);}
+
+aside.container-arrow-detail {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.red{ color: crimson;}
+
+.green { color: rgb(89, 173, 5);}
+ 
+.card-win span , .card-win pre, .header-win {
+  padding: 0 3px ;
+}
+
+.footer-win {
+  display: flex;
+  align-items: center;
+}
+
+.sales-count { font-size: smaller;}
+
+.sales-count-day {
+  font-size: x-small;
+  color: rgb(0,0,0,.5);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+ 
+}
+
+
+@media only screen and (min-width: 190px) and (max-width: 768px){ 
+  .card-win { width: 95%;}
+  
+
+}
