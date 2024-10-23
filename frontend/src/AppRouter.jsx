@@ -1,4 +1,5 @@
 import {
+      HashRouter,
      BrowserRouter as Router,
      Navigate,
      Route, 
@@ -6,7 +7,7 @@ import {
     } from "react-router-dom";
 
 import Login from './pages/login/Login';
-import Store from './pages/Store';
+import Store from './pages/main/Store';
 import MyBusiness from "./pages/MyBusiness";
 
 

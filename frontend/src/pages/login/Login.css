@@ -11,7 +11,7 @@
     width: 100%;
     height: 100vh;
     background-color: #071739;
-    background-image: url('../src/assets/design/background-desktop.png');
+    background-image: url('../../../src/assets/design/background-desktop.png');
     background-size: cover; /* A imagem cobre toda a tela */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita a repetição da imagem */ height: 100vh; /* Altura total da janela de visualização */
@@ -111,7 +111,7 @@
     width: 100dvw;
     height: 100dvh;
     background-color: #071739;
-    background-image: url('../src/assets/design/background-mobile.png');
+    background-image: url('../../../src/assets/design/background-mobile.png');
     background-size: cover; /* A imagem cobre toda a tela */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita a repetição da imagem */ height: 100vh; /* Altura total da janela de visualização */

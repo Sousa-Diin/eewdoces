@@ -1,0 +1,70 @@
+
+
+section{
+  width: 100%;
+}
+
+ul{
+  width: 50%;
+}
+
+li{
+  list-style: none;
+}
+section, ul{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  footer {
+    position: fixed;
+    right: 0;
+    top: 13vh;
+    height: 90vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    background-color: #071739;
+    color: #fff;
+  }
+
+  section, ul{
+    height: 80vh;
+    flex-direction: column;
+    align-content: space-around;gap: 20px; /* Define o espaço entre os elementos */
+    align-items: center; /* Alinha os itens no centro (opcional) */
+
+  }
+
+  ul{
+    align-items: flex-start;
+  }
+
+}
+
+
+@media only screen and (min-width: 190px) and (max-width: 768px){  
+  footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    height: 10vh;
+    background-color: rgb(0,0,0,.9);
+  }
+
+  li{
+    font-size: .7em;
+    color: #f2f2f2;
+  }
+
+}
