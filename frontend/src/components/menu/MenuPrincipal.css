@@ -1,17 +1,17 @@
 
 
-section{
+.menu-bottom-section{
   width: 100%;
 }
 
-ul{
+.menu-bottom-section-ul{
   width: 50%;
 }
 
-li{
+.menu-bottom-section-ul-li{
   list-style: none;
 }
-section, ul{
+.menu-bottom-section, .menu-bottom-section-ul{
   display: flex;
   justify-content: space-around;
 
@@ -19,7 +19,7 @@ section, ul{
 
 
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
-  footer {
+  .menu-bottom {
     position: fixed;
     right: 0;
     top: 13vh;
@@ -33,7 +33,7 @@ section, ul{
     color: #fff;
   }
 
-  section, ul{
+  .menu-bottom-section, .menu-bottom-section-ul{
     height: 80vh;
     flex-direction: column;
     align-content: space-around;gap: 20px; /* Define o espaço entre os elementos */
@@ -41,7 +41,7 @@ section, ul{
 
   }
 
-  ul{
+  .menu-bottom-section-ul{
     align-items: flex-start;
   }
 
@@ -49,7 +49,7 @@ section, ul{
 
 
 @media only screen and (min-width: 190px) and (max-width: 768px){  
-  footer {
+  .menu-bottom {
     position: absolute;
     bottom: 0;
     display: flex;
@@ -62,7 +62,7 @@ section, ul{
     background-color: rgb(0,0,0,.9);
   }
 
-  li{
+  .menu-bottom-section-ul-li{
     font-size: .7em;
     color: #f2f2f2;
   }

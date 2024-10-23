@@ -2,15 +2,15 @@ import './MenuPrincipal.css';
 
 function MenuPrincipal (){
   return (
-    <footer>
-      <section >      
-        <ul>
-          <li >Loja</li>
-          <li >Compras</li>
+    <footer className='menu-bottom'>
+      <section className='menu-bottom-section'>      
+        <ul className='menu-bottom-section-ul'>
+          <li className='menu-bottom-section-ul-li'>Loja</li>
+          <li className='menu-bottom-section-ul-li'>Compras</li>
         </ul>
-        <ul>
-          <li>Vendas</li>
-          <li>Menu</li>
+        <ul className='menu-bottom-section-ul'>
+          <li className='menu-bottom-section-ul-li'>Vendas</li>
+          <li className='menu-bottom-section-ul-li'>Menu</li>
         </ul>  
       </section>
     </footer>
