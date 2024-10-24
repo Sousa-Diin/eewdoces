@@ -64,9 +64,9 @@ aside.container-arrow-detail {
 
 @media only screen and (min-width: 190px) and (max-width: 768px){ 
   .card-win { 
-    width: 300px;
-    height: 115px;
-    font-size: x-small;
+    max-width: 440px;
+    height: 125px;
+    font-size: small;
   }
   
 

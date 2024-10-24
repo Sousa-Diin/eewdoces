@@ -30,8 +30,9 @@
 .hide { visibility:hidden ;}
 
 @media only screen and (min-width: 190px) and (max-width: 650px) {
-  .main-menu {         
-    max-width: 480px; /* Altura pode ser ajustada conforme necessário */
+  .main-menu { 
+    width: 99%;        
+    max-width: 520px; /* Altura pode ser ajustada conforme necessário */
     margin-top: 60px;  /* Menor espaço para header em telas pequenas */
     margin-bottom: 50px; /* Ajuste para o footer em telas pequenas */
   
