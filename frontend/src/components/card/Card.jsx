@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import './main.css';
+import './card.css';
 import arrowRigth from '../../assets/icons/chevron-right.svg'
+import Accordion from 'react-bootstrap/Accordion';
 
-function Main() {
+function Card() {
   const [winnings, setWinnings] = useState('288,00');
   const [countWinnings, setCountWinnings] = useState(24);
 
@@ -27,4 +28,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Card;

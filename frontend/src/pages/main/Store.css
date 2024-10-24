@@ -1,15 +1,40 @@
+.container-faturar-cobrar {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  /* Altura total da tela */
+    overflow-y: auto;  /* Permite rolar o conteúdo, se necessário */
+  }
+}
+
 .main-menu {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
   align-items: center;
-  width: 100dvw;
-  height: 100dvh;
+  width: 100%;   
+  height: 100dvh;       /* Ocupar a maior parte da tela */
+  max-width: 1440px;     /* Define um limite de largura para desktops */
+  max-height: 1200px;        /* Ajusta a altura conforme necessário */
   background-color: #CDD5DB;
+
+ /*  flex: 1; */  /* Permite que o conteúdo principal ocupe o espaço restante */
+  margin-top: 75px;  /* Margem para o header fixo */
+  margin-bottom: 10px; /* Margem para o footer fixo */
+  padding: 20px;
+ /*  overflow-y: auto;  */ /* Permite rolar o conteúdo, se necessário */
+
   
 }
 
+.hide { visibility:hidden ;}
+
 @media only screen and (min-width: 190px) and (max-width: 650px) {
+  .main-menu {         
+    max-width: 480px; /* Altura pode ser ajustada conforme necessário */
+    margin-top: 60px;  /* Menor espaço para header em telas pequenas */
+    margin-bottom: 50px; /* Ajuste para o footer em telas pequenas */
   
+  }
  
 }

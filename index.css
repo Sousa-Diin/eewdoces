@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Reset básico para garantir margem e padding zerados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definir altura total da tela para a página */
+html, body {
+  height: 100%;
+}

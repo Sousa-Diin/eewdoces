@@ -1,0 +1,18 @@
+.sidebar-business {
+  width: 20%;
+  display: flex;
+  font-size: smaller;
+  color: #071739;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.sales { text-decoration: underline;}
+
+@media only screen and (min-width:190px) and (max-width:650px){
+  .sidebar-business {
+    width: 200px;
+    font-size: smaller;
+  }
+
+}

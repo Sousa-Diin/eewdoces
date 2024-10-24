@@ -1,0 +1,72 @@
+/* Definição básica da navbar */
+.navbar-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #071739;
+  color: white;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+/* Estilos para os itens do menu */
+.nav-item {
+  flex: 1;
+  text-align: center;
+}
+
+/* Estilos para o botão de adicionar */
+.add-button {
+  position: relative;
+  bottom: 20px; /* Centraliza o botão */
+  text-align: center;
+}
+
+.add-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fda828;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.add-button button:hover {
+  background-color: #e64a19;
+}
+
+/* Ícone de menu sanduíche */
+.menu-icon {
+  font-size: 24px;
+}
+
+#store-menu  img:hover, #product-menu img:hover, #bag-menu img:hover, #list-menu img:hover { 
+  color: #fda282;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar-footer {
+    padding: 15px 0;
+  }
+
+  .add-button button {
+    width: 50px;
+    height: 50px;
+  }
+  
+
+  #store-menu, #product-menu, #bag-menu {
+    width: 20px;
+  }
+
+  #list-menu { width: 23px;}
+}
