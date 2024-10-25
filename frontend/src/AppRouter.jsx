@@ -8,7 +8,7 @@ import {
 
 import Login from './pages/login/Login';
 import Store from './pages/main/Store';
-import MyBusiness from "./pages/MyBusiness";
+import MyBusiness from "./pages/my-business/MyBusiness";
 
 const AppRouter =() => {
    

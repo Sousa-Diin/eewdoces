@@ -1,0 +1,27 @@
+/* Estilos gerais */
+.section-business{
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 100%;
+  min-width: 1250px;
+  height: 100%;
+  min-height: 100dvh;
+  /* background-color: #F2F2F2; */
+}
+/* Responsividade */
+
+@media only screen and (min-width:190px) and (max-width:650px){
+  .section-business{
+    align-items: center;
+    gap: 1em;
+    justify-content: space-around;
+    min-width: 650px;
+  }
+
+
+}

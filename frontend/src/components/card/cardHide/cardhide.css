@@ -1,14 +1,14 @@
 .div-faturar-cobrar {
   width: 100%;        /* Largura fixa */
-  height: auto; 
+  /* height: auto;  */
   z-index: 0;
-  /* overflow-y: scroll; */  /* Barra de rolagem apenas no eixo Y */
+  /* overflow-y: scroll;  */ /* Barra de rolagem apenas no eixo Y */
 }
 
 @media only screen and (min-width: 190px ) and (max-width:650px){
   
   .div-faturar-cobrar {
     max-width: 440px;
-    height: 125px;
+    height: 70px;
   }
 }

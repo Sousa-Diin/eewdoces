@@ -12,4 +12,7 @@
 /* Definir altura total da tela para a página */
 html, body {
   height: 100%;
+  
+  font-family: 'Roboto', sans-serif;
 }
+
