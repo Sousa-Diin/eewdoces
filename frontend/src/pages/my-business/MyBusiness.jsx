@@ -27,8 +27,8 @@ const MyBusiness = () => {
         {label: 'Creme de leite ', value: Math.floor(Math.random() * 3000), unidade: 'g'},
         {label: 'Chocolate ', value: Math.floor(Math.random() * 3000), unidade: 'g'},
         {label: 'Granule ', value: Math.floor(Math.random() * 3000), unidade: 'g'},
-        {label: 'Caixa P-650 ', value: Math.floor(Math.random() * 3000), unidade: 'UN'},
-        {label: 'Adesivos p/ caixa ', value: Math.floor(Math.random() * 3000), unidade: 'UU'},
+        {label: 'Caixa P-650 ', value: Math.floor(Math.random() * 3000), unidade: 'un'},
+        {label: 'Adesivos p/ caixa ', value: Math.floor(Math.random() * 3000), unidade: 'un'},
       ]);
 
     }, 5000);

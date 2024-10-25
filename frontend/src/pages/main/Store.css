@@ -36,7 +36,7 @@
     height: auto;
     max-height: 550px;       
     margin-top: 60px;  /* Menor espaço para header em telas pequenas */
-    margin-bottom: 80dvh; /* Ajuste para o footer em telas pequenas */
+    margin-bottom: 160dvh; /* Ajuste para o footer em telas pequenas */
   
   }
  
