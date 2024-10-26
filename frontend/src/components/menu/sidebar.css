@@ -6,14 +6,16 @@
   color: #071739;
   justify-content: space-between;
   cursor: pointer;
+  padding: 10px;
 }
 
 .underline { text-decoration: underline; font-weight: 700;}
 
 @media only screen and (min-width:190px) and (max-width:650px){
   .sidebar-business {
-    width: 230px;
-    font-size: smaller;
+    width: auto;
+    font-size: 1rem;
+    gap: 1rem;
   }
 
 }

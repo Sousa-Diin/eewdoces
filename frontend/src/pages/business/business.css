@@ -19,7 +19,9 @@
   .section-business{
     align-items: center;
     justify-content: space-around;
-    min-width: 445px;
+    flex-flow: column;
+    width: 99%;
+    min-width:440px;
     font-size: 1rem;
     gap: .5em;
 

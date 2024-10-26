@@ -36,9 +36,7 @@ const Business = () => {
   }, []);
 
   return (
-    <>
-      
-      <section className='section-business' >
+    <section className='section-business' >
         
         <Card2Col 
           title={'Vendas'}
@@ -59,9 +57,8 @@ const Business = () => {
           title={'Suprimentos'}
           arrayItem={supplyData}
         />
-      </section>
+    </section>
       
-    </>
   );
 };
 
