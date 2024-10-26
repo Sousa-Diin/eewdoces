@@ -20,8 +20,8 @@
     align-items: center;
     justify-content: space-around;
     flex-flow: column;
-    width: 99%;
-    min-width:440px;
+    width: 100dvw;
+    min-width:100%;
     font-size: 1rem;
     gap: .5em;
 

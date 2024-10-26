@@ -34,7 +34,7 @@
 
 @media only screen and (min-width:190px) and (max-width:650px){
   .section {
-    width: 65%;
+    min-width:95%;
   }
 
   .section h2 {
