@@ -96,7 +96,7 @@
     max-width: 400px;
   }
 
-  .login-footer > a:hover { color:#071739}
+  .login-footer :hover { color:#071739}
 }
 
 
@@ -145,7 +145,7 @@
 
 /* Estilo para o formulário */
 .login-form {
-  height: 95%;
+  height: 50dvh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
