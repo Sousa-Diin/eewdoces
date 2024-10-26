@@ -3,11 +3,9 @@ import './Store.css';
 import logo from '../../assets/img/eewdoces_adesivo_com_arco.png';
 import Header from '../../components/header/Header';
 import Sidebar from '../../components/menu/Sidebar';
-import Main from '../../components/card/Card';
-import CardHide from '../../components/card/cardHide/CardHide';
 import Navbar from '../../components/footer/Navbar';
 import { useState } from 'react';
-import MyBusiness from '../my-business/MyBusiness';
+import MyBusiness from '../business/Business';
 import Sales from '../sales/Sales';
 
 function Store({hidden,}) {

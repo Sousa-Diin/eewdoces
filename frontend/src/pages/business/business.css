@@ -18,9 +18,11 @@
 @media only screen and (min-width:190px) and (max-width:650px){
   .section-business{
     align-items: center;
-    gap: 1em;
     justify-content: space-around;
-    min-width: 440px;
+    min-width: 445px;
+    font-size: 1rem;
+    gap: .5em;
+
   }
 
 

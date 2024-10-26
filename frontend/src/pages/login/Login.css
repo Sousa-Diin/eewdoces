@@ -44,7 +44,8 @@
   .login-form input {
     margin-bottom: 15px;
     padding: 12px;
-    font-size: 18px;
+    
+    font-size: 1.2rem;
     border: none;
     background-color: rgb(227, 195, 157,.3);
     border-radius: 4px;
@@ -89,10 +90,13 @@
     display: flex;
     justify-content: space-between;
     color: #cdd5db;
-    font-size: x-small;
+    font-size: medium;
+    text-decoration: underline;
     width: 95%;
     max-width: 400px;
   }
+
+  .login-footer > a:hover { color:#071739}
 }
 
 
@@ -120,7 +124,7 @@
 .login-container-div {
  
   width: 90%;
-  height: 55%;
+  height: auto;
   margin: 0 auto;
   padding: 30px;
   background-color: rgb(205, 213, 219,.8);
@@ -128,6 +132,7 @@
   box-shadow: 0 2px 10px rgb(75, 99, 130);
   text-align: center;
   box-sizing: border-box;
+  font-size: 1.1rem;
   
 }
 
@@ -144,6 +149,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
+  font-size: 1.3rem;
 }
 
 
@@ -153,18 +160,21 @@
   margin-top: 5px;
   justify-content: space-around;
   color: #4b6382;
-  font-size: small;
+  font-size: medium;
+  font-size: medium;
+  text-decoration: underline;
 }
 
 .login-footer a{
   margin: 0 auto;
 }
 
+.login-footer a:hover { color:#f2f2f2}
+
 /* Estilo para os inputs */
 .login-form input {
   margin-bottom: 15px;
   padding: 12px;
-  font-size: 18px;
   border: none;
   background-color: rgb(227, 195, 157,.4);
   border-radius: 4px;
@@ -178,7 +188,6 @@
 /* Estilo para o botão */
 .login-form button {
   padding: 12px;
-  font-size: 32px;
   background-color: #4B6382; /* Cor do botão em harmonia com E&WDoces */
   color: white;
   border: 2px solid #E3C39D;
@@ -195,7 +204,8 @@
 
 .login-form input,
 .login-form button {
-    font-size: 14px; /* Ajusta o tamanho da fonte dos inputs e botões */
+    
+    font-size: 1rem;/* Ajusta o tamanho da fonte dos inputs e botões */
     padding: 10px; /* Padding menor em telas pequenas */
   }
 
@@ -204,7 +214,8 @@
   }
 
   .login-container-div h2 {
-    font-size: 2em; /* Tamanho do título ajustado para smartphones */
+    
+    font-size: 1.3rem;/* Tamanho do título ajustado para smartphones */
   }
   
 }

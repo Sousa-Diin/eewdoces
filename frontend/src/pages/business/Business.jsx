@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './mybusiness.css';
+import './business.css';
 import Card2Col from '../../components/card/card2col/Card2Col';
 
-const MyBusiness = () => {
+const Business = () => {
 
   const [salesData, setSalesData] = useState([]);
   const [supplyData, setSupplyData] = useState([]);
@@ -65,4 +65,4 @@ const MyBusiness = () => {
   );
 };
 
-export default MyBusiness;
+export default Business;
