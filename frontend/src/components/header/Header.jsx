@@ -1,6 +1,17 @@
 /* import './Header.css'; */
 import './Header.css';
-function Header ({title, logo, style}) {
+
+import logo from '../../assets/img/eewdoces_adesivo_com_arco.png';
+
+function Header () {
+  const style = {
+    div:"head-container-div",
+    img:"head-container-img",
+    h3: "head-container-h3"
+  }
+
+  const title ='E&W'; 
+
   return (
     <div className={style.div}>
         <img className={style.img} src={logo} />

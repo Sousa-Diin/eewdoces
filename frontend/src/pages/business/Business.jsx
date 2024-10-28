@@ -14,6 +14,8 @@ const Business = () => {
   ]);
 
   useEffect(() => {
+
+    document.title = "eewdoces | Meu Negócio"; 
     // Simula uma atualização de dados a cada 5 segundos
     const interval = setInterval(() => {
       setSalesData([

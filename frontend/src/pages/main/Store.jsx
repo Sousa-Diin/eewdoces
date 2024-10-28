@@ -1,36 +1,25 @@
 import React from 'react';
 import './Store.css';
-import logo from '../../assets/img/eewdoces_adesivo_com_arco.png';
+
 import Header from '../../components/header/Header';
 import Sidebar from '../../components/menu/Sidebar';
 import Navbar from '../../components/footer/Navbar';
-import { useState } from 'react';
 import MyBusiness from '../business/Business';
-import Sales from '../sales/Sales';
+import Winnings from '../winnings/Winnings';
 
-function Store({hidden,}) {
-  let style = {
-    div:"head-container-div",
-    img:"head-container-img",
-    h3: "head-container-h3"
-  }
-
+import { useState } from 'react';
+function Store({hidden}) {
+ 
   const [activePage, setActivePage] = useState('vendas');
 
   return (
     <div className='container-faturar-cobrar'>
-      <Header 
-        title={'E&W'} 
-        logo={logo}
-        style={style}
-      />
-      
+      <Header/>
       <main id='main-s-n' className='main-menu'>
         <Sidebar activePage={activePage} setActivePage={setActivePage}/>
-        {activePage === 'vendas' && <Sales/>}
+        {activePage === 'vendas' && <Winnings/>}
         {activePage === 'meuNegocio' && <MyBusiness/>} 
       </main>
-      
       <Navbar/>
     </div>
   );

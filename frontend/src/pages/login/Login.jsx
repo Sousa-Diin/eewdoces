@@ -10,7 +10,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Lógica para login
-    navigate('/eewdoces/store')
+    navigate('/eewdoces/main/store')
   };
 
   return (
