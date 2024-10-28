@@ -16,7 +16,7 @@ const AppRouter =() => {
     <Router>
       <Routes>           
         <Route path='/eewdoces/' element={<Login/>}/>  
-        <Route path="/eewdoces/main" element={<Store/>} />          
+        <Route path="/eewdoces/store" element={<Store/>} />          
         <Route path="/eewdoces/busi" element={<MyBusiness/>} />          
       </Routes>
     </Router>
