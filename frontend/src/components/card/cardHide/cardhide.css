@@ -3,6 +3,12 @@
   /* height: auto;  */
   z-index: 0;
   /* overflow-y: scroll;  */ /* Barra de rolagem apenas no eixo Y */
+  
+
+}
+
+.acordion {
+  background-color: transparent;
 }
 
 @media only screen and (min-width: 190px ) and (max-width:650px){

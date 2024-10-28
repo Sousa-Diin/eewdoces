@@ -14,7 +14,7 @@ function Store({hidden}) {
 
   return (
     <div className='container-faturar-cobrar'>
-      <Header/>
+      <Header title='E&W'/>
       <main id='main-s-n' className='main-menu'>
         <Sidebar activePage={activePage} setActivePage={setActivePage}/>
         {activePage === 'vendas' && <Winnings/>}

@@ -8,6 +8,8 @@ const Sales = () => {
   
   return(
     <div className=''>
+      <h6>Minhas vendas</h6>
+
       <Navbar/>
     </div>
   );

@@ -4,7 +4,7 @@
   width: 100%;
   border-radius: 15px;
   box-shadow: 3px 2px 10px 5px rgb(0,0,0,.2);
-  background-color: #F2F2F2;
+  background-color: rgb(242, 242, 242,.8);
 
 }
 
@@ -19,7 +19,6 @@
 
 section.header-win > pre { 
   
-  background-color: aquamarine;
   padding: 0;
   font-size: small;
   color: rgb(0,0,0,.5);
@@ -48,7 +47,7 @@ aside.container-arrow-detail {
 .sales-count { font-size: smaller;}
 
 .sales-count-day {
-  font-size: x-small;
+  font-size: small;
   color: rgb(0,0,0,.5);
 }
 

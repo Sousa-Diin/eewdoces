@@ -6,7 +6,7 @@ function CardHide({children, title}) {
     <section className='div-faturar-cobrar'>
       <Accordion defaultActiveKey="1">
           <Accordion.Item eventKey="1">
-            <Accordion.Header className="">{title}</Accordion.Header>
+            <Accordion.Header className="acordion">{title}</Accordion.Header>
             <Accordion.Body>
               {children}
             </Accordion.Body>
