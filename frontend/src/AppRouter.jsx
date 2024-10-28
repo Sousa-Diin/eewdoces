@@ -1,9 +1,8 @@
 import {
-      HashRouter,
-     BrowserRouter as Router,
-     Navigate,
-     Route, 
-     Routes,
+      HashRouter
+      as Router,
+      Route, 
+      Routes,
     } from "react-router-dom";
 
 import Login from './pages/login/Login';
