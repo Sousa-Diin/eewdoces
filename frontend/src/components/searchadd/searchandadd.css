@@ -1,0 +1,45 @@
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: .3em;
+  border-radius: 25px;
+  background-color: var(--color-secondary);
+}
+.dad-search-container { width: 100%;}
+
+.dad-search-container img {cursor: pointer; border-radius: 50%;}
+
+.search-container input {
+  min-width: 95% ;
+  padding-left: 5px;
+  height: auto;
+  border-radius: 25px;
+  background-color: var(--color-secondary);
+}
+
+.search-container input:focus {
+  outline: none;  
+}
+
+
+
+@media only screen and (min-width: 190px) and (max-width:650px){
+  .search-container{
+    width: 85%;
+  }
+
+  .search-container input {
+    min-width: 70%;
+
+  }
+
+  /* .my-sales{
+    flex-flow: column nowrap;
+  }
+
+  .sales{
+    width: 85dvw;
+    min-height: 30%;
+  } */
+}
