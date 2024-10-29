@@ -1,0 +1,34 @@
+
+:root {
+  --color-primary: #071739;
+  --color-primary-cc: #071739cc;
+  --color-primary-light: #a4b5c4;
+  --color-primary-dark: #4b6382;
+  --color-secondary: #cdd5db;
+  --color-secondary-dark: #a68868;
+  --color-secondary-light: #e3c39d;
+  --color-button-dark: #fda828;
+  --color-button-light: #fda282;
+  --color-white-nave: #f2f2f2;
+  --color-white-nave-cc: rgb(242, 242, 242,.8);
+  --color-white: #fff;
+  --color-gelo-white: #fcfcfc;
+  --color-black: #000;
+  --color-black-light: #222;
+
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+*{
+  box-sizing: border-box;
+  
+}
+
+html, body { transition: all 0.3s ease; /* transição suave */}
+
+html a:hover, body a:hover {
+  color: var(--color-secondary-dark);
+}
+
+
