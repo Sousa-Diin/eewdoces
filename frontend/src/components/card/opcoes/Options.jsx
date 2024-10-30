@@ -1,14 +1,16 @@
 import React from "react";
 
 import './options.css';
+import list from '../../../assets/icons/list.svg';
+import close from '../../../assets/icons/close.svg';
 
 const Options = ({handleVisibleContainer}) => {
  
   return (
     <>
-      <nav>
-        <img src="" alt="list menu icon" className="list" />
-        <button onClick={ handleVisibleContainer }><img src="" alt="close menu icon" className="close" /> X </button>
+      <nav className="header-option">
+        <img src={list} alt="list menu icon" className="list" />
+        <button onClick={ handleVisibleContainer }><img src={close} alt="close menu icon" className="close" /></button>
       </nav>
     </>
   )

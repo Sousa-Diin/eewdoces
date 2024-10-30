@@ -1,12 +1,12 @@
 .cantainer-main-option {
   width: 30dvw;
-  height: 73.6dvh; /* Permite transitar suave de cima p/ baixo com as altura em conjutas */
+  height: 100vh; /* Permite transitar suave de cima p/ baixo com as altura em conjutas */
   max-height: 0;
   padding: .5rem;
   background-color: var(--color-secondary);
   position: absolute;
   right: 0;
-  bottom:13.4dvh;
+  bottom:0;
   display: flex;
   flex-direction: column;/* 
   transition: all ease-in-out 1ms; */
@@ -17,7 +17,7 @@
 
 .open { 
   opacity: 1;
-  max-height: 73.6dvh;
+  min-height: 100dvh;
 }
 
 

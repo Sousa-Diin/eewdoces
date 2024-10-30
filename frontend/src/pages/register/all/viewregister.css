@@ -72,7 +72,7 @@
 
   .main-all-register nav {
     flex-flow: column ;
-    max-width: 95%;
+    min-width: 90%;
     border-radius: 10px;
   }
 
