@@ -1,7 +1,7 @@
 .cantainer-main-menu-principal  {
   
   min-width: 100dvw;
-  height: 50vh; /* Permite transitar suave de cima p/ baixo com as altura em conjutas */
+  height: 30vh; /* Permite transitar suave de cima p/ baixo com as altura em conjutas */
   max-height: 0;
   padding: .5rem;
   background-color: var(--color-primary-cc);
@@ -45,6 +45,9 @@
 
 @media only screen and (min-width:190px) and (max-width:650px) {
 
+  .cantainer-main-menu-principal{
+    min-height: 30dvh;
+  }
   .cantainer-main-menu-principal button {
     width: 50px;
     height: 50px;
