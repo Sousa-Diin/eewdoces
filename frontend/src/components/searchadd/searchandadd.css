@@ -16,12 +16,14 @@
   height: auto;
   border-radius: 25px;
   background-color: var(--color-secondary);
+  z-index: 0;
 }
 
 .search-container input:focus {
   outline: none;  
 }
 
+.search-container img { width: 25px; height: auto; padding-right: .3rem; }
 
 
 @media only screen and (min-width: 190px) and (max-width:650px){
