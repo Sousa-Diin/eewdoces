@@ -8,8 +8,7 @@
   min-height: 23dvh;
   border-radius: 10px;
   background-color: var( --color-gelo-white);
-  border-color: #4a90e2; /* Exemplo de borda personalizada ao focar */
-  box-shadow: 0 0 5px var(--color-primary-cc); /* Sombra leve ao focar */
+  box-shadow: 0 0 5px var(--color-secondary); 
 }
 
 .container-status {
@@ -20,7 +19,7 @@
 @media only screen and (min-width:190px) and (max-width:650px) {
  
   .sales{
-    width: 85dvw;
+    width: 88dvw;
     height: auto;
     min-height: 170px;
   }
