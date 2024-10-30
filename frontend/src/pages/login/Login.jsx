@@ -31,7 +31,7 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button type="submit">Entrar</button>
-        <footer className='login-footer'><a>cadastrar</a><a>esqueci minha Senha</a></footer>
+        <footer className='login-footer'><a>Cadastrar</a><a>esqueci minha Senha</a></footer>
       </form>
     </div>
     </section>
