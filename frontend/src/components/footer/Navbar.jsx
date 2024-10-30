@@ -29,7 +29,7 @@ const Navbar = () => {
                 onClick={
                   item.path === '/eewdoces/main/option' ? handleVisibleContainer
                   : item.path  ? item.path === '/eewdoces/main/menu' ? handleClosenMenu 
-                  : item.path : ''
+                  : item.path : item.path
                 }
                 src={item.src} alt={item.alt} />
             </div>
