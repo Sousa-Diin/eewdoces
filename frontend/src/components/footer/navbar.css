@@ -23,6 +23,7 @@
   position: relative;
   bottom: 22px; /* Centraliza o botão */
   text-align: center;
+  z-index: 1;
 }
 
 .add-button button {
@@ -43,9 +44,6 @@
   background-color: #e64a19;
 }
 
-.bi {
-  color: #fda828;
-}
 
 /* Ícone de menu sanduíche */
 .menu-icon {

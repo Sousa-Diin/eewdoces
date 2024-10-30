@@ -34,7 +34,7 @@ export const navbarlist =  [
       src: plus,
       alt: 'icon plus',
       style: 'add-button',
-      path: '/eewdoces/main/store',
+      path: '/eewdoces/main/menu',
     },
     {
       name: "bag-menu",
@@ -48,7 +48,7 @@ export const navbarlist =  [
       src: list,
       alt: 'icon list',
       style: 'nav-item',
-      path: '/eewdoces/main/store',
+      path: '/eewdoces/main/option',
     },
 ];
 

@@ -1,0 +1,40 @@
+.cantainer-main-option {
+  width: 30dvw;
+  height: 73.6dvh; /* Permite transitar suave de cima p/ baixo com as altura em conjutas */
+  max-height: 0;
+  padding: .5rem;
+  background-color: var(--color-secondary);
+  position: absolute;
+  right: 0;
+  bottom:13.4dvh;
+  display: flex;
+  flex-direction: column;/* 
+  transition: all ease-in-out 1ms; */
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease;
+  opacity: 0;
+  box-shadow: 0 0 2px var(--color-secondary);
+}
+
+.open { 
+  opacity: 1;
+  max-height: 73.6dvh;
+}
+
+
+@media only screen and (min-width:190px) and (max-width:650px) {
+  .cantainer-main-option {
+    width: 75dvw;
+    max-width: 0;
+    min-height:100dvh;
+    z-index: 1;
+    transition: max-width 0.5s ease-in-out, opacity 0.5s ease;
+    /* bottom:13.4dvh; */
+    bottom:0;
+  }
+
+  
+.open { 
+  opacity: 1;
+  max-width: 75dvw;
+}
+}
