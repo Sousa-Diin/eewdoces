@@ -5,6 +5,7 @@ import { navbarlist } from '../../config/layout/ListItens.js';
 import ButtonIcon from '../button/ButtonIcon';
 import SideBar from '../option/SideBar.jsx';
 import MenuPrincipal from '../menu/menumain/MenuPrincipal.jsx';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -28,6 +29,8 @@ const Navbar = () => {
     return route;
   }
 
+  const navigate = useNavigate();
+
   return (
     <div className="navbar-footer">
       {navbarlist && navbarlist.map((item, index) => {
@@ -36,16 +39,16 @@ const Navbar = () => {
             <div className= {item.style } key={index}>
               <ButtonIcon 
                 id={item.name} 
-<<<<<<< HEAD
+                link={
+                  item.path !== '/eewdoces/main/option' || item.path === '/eewdoces/main/menu' 
+                  ? item.path 
+                  : ''
+                 }
                 onClick={
                   item.path === '/eewdoces/main/option' ? handleVisibleContainer
                   : item.path === '/eewdoces/main/menu' ? handleClosenMenu 
                   : item.path 
                 }
-=======
-                link={ handleChangeRoute(item.path)}
-                onClick={ handleChangeRoute(item.path) }
->>>>>>> b20049d9a328f9d50f9ad689aff1fb899a666439
                 src={item.src} alt={item.alt} />
             </div>
             <SideBar visible={visible} handleVisibleContainer={handleVisibleContainer}/>
