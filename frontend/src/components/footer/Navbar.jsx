@@ -18,6 +18,16 @@ const Navbar = () => {
     handleOpenMenu(!open);
   }
 
+  const handleChangeRoute = route => {
+    if (route === '/eewdoces/main/option'){
+      return handleVisibleContainer;
+    } 
+    else if (route === '/eewdoces/main/menu'){
+      return handleClosenMenu;
+    }
+    return route;
+  }
+
   return (
     <div className="navbar-footer">
       {navbarlist && navbarlist.map((item, index) => {
@@ -26,11 +36,8 @@ const Navbar = () => {
             <div className= {item.style } key={index}>
               <ButtonIcon 
                 id={item.name} 
-                onClick={
-                  item.path === '/eewdoces/main/option' ? handleVisibleContainer
-                  : item.path  ? item.path === '/eewdoces/main/menu' ? handleClosenMenu 
-                  : item.path : item.path
-                }
+                link={ handleChangeRoute(item.path)}
+                onClick={ handleChangeRoute(item.path) }
                 src={item.src} alt={item.alt} />
             </div>
             <SideBar visible={visible} handleVisibleContainer={handleVisibleContainer}/>
@@ -50,3 +57,8 @@ export default Navbar;
         <button id="store-menu"><img src={store} alt="" /></button>
       </div> 
 */}
+
+                         /* 
+ item.path === '/eewdoces/main/option' ? handleVisibleContainer
+ : item.path  ? item.path === '/eewdoces/main/menu' ? handleClosenMenu 
+ : item.path : item.path */
