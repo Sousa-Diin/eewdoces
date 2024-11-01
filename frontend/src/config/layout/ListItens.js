@@ -37,7 +37,6 @@ export const navbarlist =  [
       src: plus,
       alt: 'icon plus',
       style: 'add-button',
-      path: '/eewdoces/main/menu',
     },
     {
       id:'btn-link',
@@ -53,7 +52,6 @@ export const navbarlist =  [
       src: list,
       alt: 'icon list',
       style: 'nav-item',
-      path: '/eewdoces/main/option',
     },
 ];
 
@@ -64,7 +62,7 @@ export const  IconResgisterList = [
       name: "Fornecedor",
       src: supplier,
       style: 'nav-item-register',
-      path: '/eewdoces/register/supplier',
+      path: '/eewdoces/register/suppliers',
     },
     {
       name: "Clientes",

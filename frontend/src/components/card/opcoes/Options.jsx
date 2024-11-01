@@ -2,7 +2,7 @@ import React from "react";
 
 import './options.css';
 import list from '../../../assets/icons/list.svg';
-import close from '../../../assets/icons/close.svg';
+import close from '../../../assets/icons/x-circle-fill.svg';
 
 const Options = ({handleVisibleContainer}) => {
  

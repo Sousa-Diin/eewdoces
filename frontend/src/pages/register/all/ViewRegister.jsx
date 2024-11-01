@@ -11,11 +11,6 @@ import ArrowLeft from '../../arrowleft/ArrowLeft';
 function ViewRegister () {
   useEffect(()=>{ document.title='eewdoces | Cadastros'},[]);
 
-  const cssArrowBack = {
-    title: 'container-back-title',
-    img: 'container-back-img',
-    container:'container-back-container',
-  }
 
   const url = '/eewdoces/main/store'
 
@@ -24,7 +19,7 @@ function ViewRegister () {
       <Header title='E&W'/>
     
       <main className='main-all-register'>
-      <ArrowLeft to={url} logo={arrow_left} style={cssArrowBack}>Cadastros</ArrowLeft>
+      <ArrowLeft to={url} logo={arrow_left} >Cadastros</ArrowLeft>
         <nav>
           {
             IconResgisterList.map((item, index) => {

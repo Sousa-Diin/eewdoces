@@ -1,6 +1,7 @@
 .container-register {
   display: flex;
   flex-direction: row;
+  max-width: 100dvw;
   height: 100dvh;  /* Altura total da tela */
   overflow-y: auto;  /* Permite rolar o conteúdo, se necessário */
   background-color: #CDD5DB;
@@ -14,6 +15,7 @@
 .main-all-register{
   /* font-family: 'Roboto', sans-serif; */
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  width: 98dvw;
   margin-top: 4rem;
   display: flex;
   flex-flow: column ;
@@ -22,7 +24,7 @@
 }
 
 .main-all-register nav {
-  width: 99dvw;
+  
   height: 80dvh;
   display: flex;
   flex-flow: row ;
