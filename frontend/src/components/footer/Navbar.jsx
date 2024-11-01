@@ -5,7 +5,7 @@ import { navbarlist } from '../../config/layout/ListItens.js';
 import ButtonIcon from '../button/ButtonIcon';
 import SideBar from '../option/SideBar.jsx';
 import MenuPrincipal from '../menu/menumain/MenuPrincipal.jsx';
-import { useNavigate } from 'react-router-dom';
+import BtnLink from '../button/link/BtnLink.jsx';
 
 const Navbar = () => {
 
@@ -15,49 +15,24 @@ const Navbar = () => {
   const handleVisibleContainer = () => {
     setVisible(!visible);
   }
+
   const handleClosenMenu = () => {
     handleOpenMenu(!open);
   }
 
-  const handleChangeRoute = route => {
-    if (route === '/eewdoces/main/option'){
-      return handleVisibleContainer;
-    } 
-    else if (route === '/eewdoces/main/menu'){
-      return handleClosenMenu;
-    }
-    return route;
-  }
-
-  const navigate = useNavigate();
-
   return (
+    <>
     <div className="navbar-footer">
-      {navbarlist && navbarlist.map((item, index) => {
-        return(
-          <>
-            <div className= {item.style } key={index}>
-              <ButtonIcon 
-                id={item.name} 
-                link={
-                  item.path !== '/eewdoces/main/option' || item.path === '/eewdoces/main/menu' 
-                  ? item.path 
-                  : ''
-                 }
-                onClick={
-                  item.path === '/eewdoces/main/option' ? handleVisibleContainer
-                  : item.path === '/eewdoces/main/menu' ? handleClosenMenu 
-                  : item.path 
-                }
-                src={item.src} alt={item.alt} />
-            </div>
-            <SideBar visible={visible} handleVisibleContainer={handleVisibleContainer}/>
-            <MenuPrincipal open={open} handleClosenMenu={handleClosenMenu}/>
-          </>
-          
-        )
-      })}
+        <BtnLink id={navbarlist[0].name} className={navbarlist[0].style} src={navbarlist[0].src} link={navbarlist[0].path}/>
+        <BtnLink id={navbarlist[1].name} className={navbarlist[1].style} src={navbarlist[1].src} link={navbarlist[1].path}/>
+        <ButtonIcon id={navbarlist[2].name} style={navbarlist[2].style} src={navbarlist[2].src} onClick={handleClosenMenu}/>
+        <BtnLink id={navbarlist[3].name} className={navbarlist[3].style} src={navbarlist[3].src} link={navbarlist[3].path}/>
+        <ButtonIcon id={navbarlist[4].name} className={navbarlist[4].style} src={navbarlist[4].src} onClick={handleVisibleContainer}/>
+      
     </div>
+    <SideBar visible={visible} handleVisibleContainer={handleVisibleContainer}/>
+    <MenuPrincipal open={open} handleClosenMenu={handleClosenMenu}/>
+    </>
   );
 };
 

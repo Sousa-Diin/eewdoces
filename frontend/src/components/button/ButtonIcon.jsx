@@ -1,18 +1,14 @@
 import React from 'react';
 
 import './btnicon.css';
-import { Link } from 'react-router-dom';
 
-function ButtonIcon ({id, src, alt,onClick, link, name}) {
+function ButtonIcon ({id, src, onClick, style}) {
 
 
   return( 
-      <Link to={link}>
-        <button onClick={onClick} className='button' id={id}>
-          <img src={src} alt={alt} />
-        </button>
-        {name}
-      </Link>
+    <button onClick={onClick} className={style} id={id}>
+      <img src={src} alt='btn icon' />
+    </button>
   );
 }
 

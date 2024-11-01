@@ -16,6 +16,7 @@ import transactions from '../../assets/icons/transactions.svg';
 
 export const navbarlist =  [ 
     {
+      id:'btn-link',
       name: "store-menu",
       src: store,
       alt: 'icon store',
@@ -23,6 +24,7 @@ export const navbarlist =  [
       path: '/eewdoces/main/store',
     },
     {
+      id:'btn-link',
       name: "product-menu",
       src: product,
       alt: 'icon product',
@@ -30,6 +32,7 @@ export const navbarlist =  [
       path: '/eewdoces/register/all',
     },
     {
+      id:'btn-button',
       name: "menu-icon",
       src: plus,
       alt: 'icon plus',
@@ -37,6 +40,7 @@ export const navbarlist =  [
       path: '/eewdoces/main/menu',
     },
     {
+      id:'btn-link',
       name: "bag-menu",
       src: bag,
       alt: 'icon bag',
@@ -44,6 +48,7 @@ export const navbarlist =  [
       path: '/eewdoces/sales/all',
     },
     {
+      id:'btn-button',
       name: "list-menu",
       src: list,
       alt: 'icon list',

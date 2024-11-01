@@ -11,12 +11,16 @@
   flex-direction: column;/* 
   transition: all ease-in-out 1ms; */
   transition: max-height 0.5s ease-in-out, opacity 0.5s ease;
-  opacity: 0;
+  opacity: 0;  
+  visibility: hidden;
+  
+  z-index: 1;
   box-shadow: 0 0 2px var(--color-secondary);
 }
 
 .open { 
   opacity: 1;
+  visibility: visible;
   min-height: 100dvh;
 }
 
