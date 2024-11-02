@@ -26,10 +26,8 @@
   
 }
 
-html, body { transition: all 0.3s ease; /* transição suave */}
+html, body { transition: all 0.3s ease-in-out; /* transição suave */}
 
-html a:hover, body a:hover {
-  color: var(--color-secondary-dark);
-}
+ 
 
 

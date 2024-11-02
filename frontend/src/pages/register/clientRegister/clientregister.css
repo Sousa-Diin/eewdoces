@@ -3,7 +3,8 @@
   position: fixed; 
   gap:1rem;
   padding-top:1rem;
-  width: 100dvw;
+  min-width: 100%;
+  width: auto;
   height: 100dvh;
   
   border-radius: 30px;

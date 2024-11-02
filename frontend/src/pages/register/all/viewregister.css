@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: row;
   max-width: 100dvw;
-  height: 100dvh;  /* Altura total da tela */
-  overflow-y: auto;  /* Permite rolar o conteúdo, se necessário */
+  height: 100dvh; 
+  position: fixed; /* Altura total da tela */
+ /*  overflow-y: auto;  */ /* Permite rolar o conteúdo, se necessário */
   background-color: #CDD5DB;
   background-image: url('../../../assets/background/logo_bck_desktop.png');
   background-position: center;
@@ -16,6 +17,7 @@
   /* font-family: 'Roboto', sans-serif; */
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   width: 98dvw;
+  min-width: 100dvw;
   margin-top: 4rem;
   display: flex;
   flex-flow: column ;
@@ -26,11 +28,12 @@
 .main-all-register nav {
   
   height: 80dvh;
+  min-height: 85%;
   display: flex;
   flex-flow: row ;
   gap: .5rem;
   padding: .4rem;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .nav-item-register{
@@ -48,15 +51,15 @@
   text-decoration: none;
   align-items: center;
   cursor: pointer;
+  transition: all  0.7s ease-in-out .5ms; 
 }
 
 
 
-/* .nav-item-register :hover {
-  background-color: #4b6382;
-  color: #f2f2f2;
-  text-decoration: none;
-} */
+.nav-item-register:hover {
+  color: var(--color-gelo-white);
+  background-color: var(--color-primary);
+}
 
 /* Responsividade */
 
@@ -67,19 +70,21 @@
   
   .main-all-register{
     flex-flow: column;
-    width: 100dvw;
+    max-width: 100%;
     font-size: 1rem;
 
   }
 
   .main-all-register nav {
     flex-flow: column ;
-    min-width: 90%;
+    width: 100%;
+    padding: 1rem;
     border-radius: 10px;
+    
   }
 
   .nav-item-register{
-    min-width: 465px;
+    min-width: 100%;
   }
 
 }

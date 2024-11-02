@@ -35,6 +35,7 @@
     min-height:100dvh;
     z-index: 1;
     transition: max-width 0.5s ease-out, opacity 1s ease;
+    position: fixed;
     bottom:0;
   }
 

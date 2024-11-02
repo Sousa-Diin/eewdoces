@@ -1,5 +1,5 @@
 .container-back-container{
-  width: 53dvw;
+  width: 55dvw;
   display: flex;
   justify-items: center;
   justify-content: space-between;
@@ -28,8 +28,9 @@
 
 @media only screen and (min-width:190px) and (max-width:650px){
   .container-back-container  {
-    width: 60dvw;
+    width: auto;
     height: 10%;
+    padding: .6rem 0;
   }
 
   .container-back-title {
