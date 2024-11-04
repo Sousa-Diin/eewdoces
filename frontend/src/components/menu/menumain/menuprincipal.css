@@ -30,13 +30,23 @@
   z-index: 2;
 }
 
+/* Animação leve */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .cantainer-main-menu-principal button {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   margin-bottom: 3rem; /* bottom: 22px; */
   background-color: var(--color-button-dark);
-  transition: max-height 0.5s ease-out, opacity .5s ease;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -57,6 +67,10 @@
   max-height: 0;
   visibility: visible;
   z-index: 1;
+}
+
+.open-menu > section {
+  animation: fadeIn 1s ease-in-out;
 }
 
 @media only screen and (min-width:190px) and (max-width:650px) {
