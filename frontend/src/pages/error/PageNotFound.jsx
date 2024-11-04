@@ -1,11 +1,18 @@
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './pagenotfound.css';
 
 const PageNotFound = () => {
+  const location = useLocation();
   const navigate = useNavigate();
-  setTimeout(()=>{
-    navigate('/eewdoces/main/store');
-  },2000);
+  const url = location.pathname;
+  const trimmedUrl = url.substring(0, url.lastIndexOf('/'));
+
+  console.log(trimmedUrl); // Resultado: "/eewdoces/sales/all"
+
+  setTimeout(()=>{/* 
+    navigate(trimmedUrl) || */
+    navigate(location.pathname);
+  },1000);
 
   return (
     <div className='container-not-found'>
