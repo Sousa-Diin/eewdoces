@@ -17,6 +17,7 @@ import Sales from "./pages/sales/Sales";
 import MenuPrincipal from "./components/menu/menumain/MenuPrincipal";
 import SideBar from "./components/option/SideBar";
 import PageNotFound from "./pages/error/PageNotFound";
+import LoginSplash from "./pages/login/splash/LoginSplash";
 
 const AppRouter =() => {
    
@@ -24,6 +25,7 @@ const AppRouter =() => {
     <Router>
       <Routes>           
         <Route path='/eewdoces/' element={<Login/>}/>  
+        <Route path='/eewdoces/splash' element={<LoginSplash/>}/>  
         <Route path="/eewdoces/main/store" element={<Store/>} />          
         <Route path="/eewdoces/main/busi" element={<MyBusiness/>} />          
         <Route path="/eewdoces/main/menu" element={<MenuPrincipal/>} />          
