@@ -16,6 +16,7 @@ import TransactionRegister from "./pages/register/transactionRegister/Transactio
 import Sales from "./pages/sales/Sales";
 import MenuPrincipal from "./components/menu/menumain/MenuPrincipal";
 import SideBar from "./components/option/SideBar";
+import PageNotFound from "./pages/error/PageNotFound";
 
 const AppRouter =() => {
    
@@ -33,6 +34,7 @@ const AppRouter =() => {
         <Route path="/eewdoces/register/products" element={<SalesRegister/>} />     
         <Route path="/eewdoces/register/orders" element={<OrderRegister/>} />     
         <Route path="/eewdoces/register/transactions" element={<TransactionRegister/>} />     
+        <Route path="*" element={<PageNotFound/>} />     
         <Route path="/eewdoces/sales/all" element={<Sales/>} />      
       </Routes>
     </Router>
