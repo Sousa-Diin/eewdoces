@@ -1,5 +1,5 @@
 /* Definição do corpo */
-.container-not-found {
+.container-not-found  {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,13 +12,13 @@
 }
 
 /* Container do conteúdo */
-h2, h3 {
+.container-not-found > h2, .container-not-found > h3 {
   text-align: center;
   margin: 0;
 }
 
 /* Estilização do h2 */
-h2 {
+.container-not-found > h2 {
   font-size: 2.5rem;
   color: #a4b5ca;
   text-shadow: 0px 0px 10px #4b6382, 0px 0px 20px #4b6382;
@@ -26,7 +26,7 @@ h2 {
 }
 
 /* Estilização do h3 */
-h3 {
+.container-not-found > h3 {
   font-size: 2rem;
   color: #cdd5db;
   text-shadow: 0px 0px 5px #a4b5ca;
@@ -48,6 +48,6 @@ h3 {
 }
 
 /* Aplicação da animação nos textos */
-h2, h3 {
+.container-not-found > h2, .container-not-found > h3 {
   animation: glow 2s infinite alternate;
 }
