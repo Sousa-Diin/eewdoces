@@ -1,0 +1,21 @@
+.my-sales{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: .5rem;
+  /* background-color: #4a90e2; */ /* ajuste teste */
+  width: 96dvw;
+  height: 100dvh;
+  padding: .5rem;
+  overflow-y: auto;
+  padding-bottom: 45dvh;
+}
+
+@media only screen and (min-width:190px) and (max-width:650px) {
+  .my-sales{
+    flex-flow: column nowrap;
+    height: 100dvh;
+    min-height: auto;
+  }
+}
+

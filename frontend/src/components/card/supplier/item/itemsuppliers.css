@@ -1,0 +1,33 @@
+/* container de vendas realizadas pendentes etc.. */
+.sales{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 22dvw;
+  padding: .5rem;
+  min-height: 10vh;/* 
+  min-height: 18dvh; */
+  border-radius: 10px;
+  background-color: var( --color-gelo-white);
+  box-shadow: 0 0 5px var(--color-secondary); 
+  transition: background-color 0.3s ease-in-out ; /* Transição de cor */
+}
+
+.sales:hover {
+  background-color: #071739;; /* Cor ao passar o mouse */
+  color: #cdd5db /* Alteração da cor do texto no hover */
+}
+
+.container-status {
+  display:flex; 
+  justify-content:space-between; 
+}
+
+@media only screen and (min-width:190px) and (max-width:650px) {
+ 
+  .sales{
+    width: 88dvw;
+    height: 100dvh;
+    min-height: 26dvh;
+  }
+}
+
