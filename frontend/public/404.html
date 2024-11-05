@@ -1,27 +1,19 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>React Router</title>
-    <script type="text/javascript">
-      var pathSegmentsToKeep = 1;
-
-      var l = window.location;
-      l.replace(
-        l.protocol +
-          "//" +
-          l.hostname +
-          (l.port ? ":" + l.port : "") +
-          l.pathname
-            .split("/")
-            .slice(0, 1 + pathSegmentsToKeep)
-            .join("/") +
-          "/?/" +
-          l.pathname.slice(1).split("/").slice(pathSegmentsToKeep).join("/").replace(/&/g, "~and~") +
-          (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
-          l.hash
-      );
-    </script>
-  </head>
-  <body></body>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página não encontrada</title>
+  <script type="text/javascript">
+    // Redireciona automaticamente para a rota principal (index.html)
+    if (window.location.pathname !== '/eewdoces/'){
+      window.location.replace('/eewdoces/');
+    }
+  </script>
+</head>
+<body>
+  <!-- Este arquivo pode ter o conteúdo HTML do index.html, se necessário -->
+  <h1>Página Não Encontrada</h1>
+  <p>Você será redirecionado para a página inicial...</p>
+</body>
 </html>
