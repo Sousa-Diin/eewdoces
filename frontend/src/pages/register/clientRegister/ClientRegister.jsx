@@ -10,15 +10,15 @@ const ClientRegister = () => {
  
   useEffect(()=>{ document.title="eewdoces | cadastro de cliente"},[]);
 
-  const url = '/eewdoces/register/all';
+  const url = '/eewdoces/view/clients';
 
   
   return(
     <div className='container-main-sales-register'>
       <ArrowLeft to={url} logo={arrow_left} >Cadastre um cliente</ArrowLeft>
-      <main className='container-sales-register'>
+      <main className='container-sales-register'>{/* 
         <SearchAndAdd id='search-sales' placeholder={'Buscar por nome do cliente'}/>
-        <SalesInfo arrayList={[]}/>
+        <SalesInfo arrayList={[]}/> */}
         
       </main>
       {/* <Navbar/> */}

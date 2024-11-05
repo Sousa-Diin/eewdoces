@@ -1,25 +1,23 @@
 import React, { useEffect } from 'react';
 
-import './salesregister.css';
+import './productregister.css';
 import arrow_left from '../../../assets/icons/chevron-left.svg';
 
-import Navbar from '../../../components/footer/Navbar';
-import SearchAndAdd from '../../../components/searchadd/SearchAndAdd';
 import ArrowLeft from '../../arrowleft/ArrowLeft';
 
 
-const SalesRegister = () => {
+const ProductRegister = () => {
  
   useEffect(()=>{ document.title="eewdoces | cadastro de produto"},[]);
 
-  const url = '/eewdoces/register/all';
+  const url = '/eewdoces/view/products';
 
   
   return(
     <div /* className='container-main-sales' */>
     <ArrowLeft to={url} logo={arrow_left} style='around' >Cadastre um produto</ArrowLeft>
       <main className='container-sales-register'>
-        {/* <SearchAndAdd id='search-sales' placeholder={'Buscar por vendas'}/> */}
+        
        
         
       </main>
@@ -28,4 +26,4 @@ const SalesRegister = () => {
   );
 }
 
-export default SalesRegister;
+export default ProductRegister;

@@ -10,7 +10,7 @@ const SupplierRegister = () => {
  
   useEffect(()=>{ document.title="eewdoces | cadastro de fornecedor"},[]);
 
-  const url = '/eewdoces/register/all';
+  const url = '/eewdoces/view/suppliers';
 
   
   return(

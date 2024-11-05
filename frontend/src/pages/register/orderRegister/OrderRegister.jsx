@@ -10,7 +10,7 @@ const OrderRegister = () => {
  
   useEffect(()=>{ document.title="eewdoces | registro de pedido"},[]);
 
-  const url = '/eewdoces/register/all';
+  const url = '/eewdoces/view/orders';
 
   
   return(
