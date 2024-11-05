@@ -29,7 +29,7 @@ export const navbarlist =  [
       src: product,
       alt: 'icon product',
       style: 'nav-item',
-      path: '/eewdoces/register/all',
+      path: '/eewdoces/register',
     },
     {
       id:'btn-button',
@@ -62,31 +62,31 @@ export const  IconResgisterList = [
       name: "Fornecedor",
       src: supplier,
       style: 'nav-item-register',
-      path: '/eewdoces/register/suppliers',
+      path: '/eewdoces/view/suppliers',
     },
     {
       name: "Clientes",
       src: client,
       style: 'nav-item-register',
-      path: '/eewdoces/register/clients',
+      path: '/eewdoces/view/clients',
     },
     {
       name: "Produtos",
       src: productR,
       style: 'nav-item-register',
-      path: '/eewdoces/register/products',
+      path: '/eewdoces/view/products',
     },
     {
       name: "Pedidos",
       src: orders,
       style: 'nav-item-register',
-      path: '/eewdoces/register/orders',
+      path: '/eewdoces/view/orders',
     },
     {
       name: "Transações",
       src: transactions,
       style: 'nav-item-register',
-      path: '/eewdoces/register/transactions',
+      path: '/eewdoces/view/transactions',
     },
 ];
 

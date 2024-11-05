@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import './pagenotfound.css';
 
-const PageNotFound = () => {
+const PageNotFound = ({message, error}) => {
   const location = useLocation();
   const navigate = useNavigate();
   const url = location.pathname;
@@ -11,13 +11,13 @@ const PageNotFound = () => {
 
   setTimeout(()=>{/* 
     navigate(trimmedUrl) || */
-    navigate(location.pathname);
+    navigate(trimmedUrl);
   },1000);
 
   return (
     <div className='container-not-found'>
-      <h2>A página solicitada não foi encontrada</h2>
-      <h3>Erro 404</h3>
+      <h2>{message || 'A página solicitada não foi encontrada'}</h2>
+      <h3>{error}</h3>
     </div>
   );
 
