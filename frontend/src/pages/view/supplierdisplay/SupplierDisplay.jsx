@@ -60,6 +60,8 @@ const SupplierDisplay = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+
+    const handleClick = () => {navigate('/eewdoces/register/suppliers');}
   
     useEffect(() => {
       // Substitua pelo seu endpoint
@@ -89,8 +91,8 @@ const SupplierDisplay = () => {
     <ArrowLeft to={url} logo={arrow_left} style='around' >Meus fornecedores</ArrowLeft>
       <main className='container-sales-register'>
         
-        <SearchAndAdd id='search-sales' placeholder={'Buscar por fornecedor'}  handleSearch = {() => alert('Function in construction...')} handleAdd={() => navigate('/eewdoces/register/suppliers')}/>
-        <Suppliers arrayList={data}/>
+        <SearchAndAdd id='search-sales' placeholder={'Buscar por fornecedor'}  handleSearch = {() => alert('Function in construction...')} handleAdd={handleClick}/>
+        <Suppliers arrayList={data} onClick={handleClick}/>
       
       </main>
       {/* <Navbar/> */}

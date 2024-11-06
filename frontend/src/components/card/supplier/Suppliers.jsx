@@ -2,14 +2,15 @@ import React from "react";
 
 import './supplier.css';
 import ItemSuppliers from "./item/ItemSuppliers";
+import NotItemFound from "../info/NotItemFound";
 
-const Suppliers = ({arrayList}) => {
+const Suppliers = ({arrayList, onClick}) => {
   return(
     <section className="my-sales">
       {
         !arrayList || arrayList.length === 0
         ? 
-          <p> Cadastre um novo fornecedor.</p> 
+          <NotItemFound title={'fornecedor'} onClick={onClick}/> 
         : 
         arrayList.map((item, index) => {
           return ( 
