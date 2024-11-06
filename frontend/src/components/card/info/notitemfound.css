@@ -11,10 +11,11 @@
   background-color: var(--color-primary);
   color: var(--color-white);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem;
-  width: 20%;
+  width:auto;
+  gap: .3rem;
   min-height: 8dvh;
   font-size: x-small;
   font-weight: 200;

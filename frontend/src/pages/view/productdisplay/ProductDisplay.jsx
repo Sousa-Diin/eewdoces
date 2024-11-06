@@ -5,6 +5,7 @@ import arrow_left from '../../../assets/icons/chevron-left.svg';
 import SearchAndAdd from '../../../components/searchadd/SearchAndAdd';
 import ArrowLeft from '../../arrowleft/ArrowLeft';
 import { useNavigate } from 'react-router-dom';
+import Product from '../../../components/card/product/Product';
 
 
 const ProductDisplay = () => {
@@ -19,7 +20,7 @@ const ProductDisplay = () => {
     <ArrowLeft to={url} logo={arrow_left} style='around' >Meus produtos</ArrowLeft>
       <main className='container-sales-register'>
         <SearchAndAdd id='search-sales' placeholder={'Buscar por produto'}  handleSearch = {() => alert('Function in construction...')} handleAdd={() => navigate('/eewdoces/register/products')}/>
-       
+        <Product/>
         
       </main>
       {/* <Navbar/> */}

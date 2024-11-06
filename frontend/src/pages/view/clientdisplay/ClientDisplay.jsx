@@ -6,6 +6,7 @@ import arrow_left from '../../../assets/icons/chevron-left.svg';
 import ArrowLeft from '../../arrowleft/ArrowLeft';
 import SearchAndAdd from '../../../components/searchadd/SearchAndAdd'
 import SalesInfo from '../../../components/card/sales/SalesInfo';
+import Client from '../../../components/card/client/Client';
 
 const ClientDisplay = () => {
  
@@ -19,7 +20,7 @@ const ClientDisplay = () => {
       <ArrowLeft to={url} logo={arrow_left} >Meus clientes</ArrowLeft>
       <main className='container-sales-register'>
         <SearchAndAdd id='search-sales' placeholder={'Buscar por clientes'} handleSearch = {() => alert('Function in construction...')} handleAdd={() => navigate('/eewdoces/register/clients')}/>
-        <SalesInfo arrayList={[]}/>
+        <Client/>
         
       </main>
       {/* <Navbar/> */}
