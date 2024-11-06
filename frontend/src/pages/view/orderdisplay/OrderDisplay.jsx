@@ -15,13 +15,13 @@ const SalesDisplay = () => {
 
   const url = '/eewdoces/register';
   const navigate = useNavigate();
-  
+  const handleClick = () => { navigate('/eewdoces/register/orders') }
   return(
     <div /* className='container-main-sales' */>
     <ArrowLeft to={url} logo={arrow_left} style='around' >Meus pedidos</ArrowLeft>
       <main className='container-sales-register'>
-        <SearchAndAdd id='search-sales' placeholder={'Buscar por pedido'} handleSearch = {() => alert('Function in construction...')} handleAdd={() => navigate('/eewdoces/register/orders')}/>
-       <Order/>
+        <SearchAndAdd id='search-sales' placeholder={'Buscar por pedido'} handleSearch = {() => alert('Function in construction...')} handleAdd={handleClick}/>
+       <Order onClick={handleClick}/>
         
       </main>
       {/* <Navbar/> */}

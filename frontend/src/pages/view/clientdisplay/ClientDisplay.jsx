@@ -14,13 +14,14 @@ const ClientDisplay = () => {
 
   const url = '/eewdoces/register';
   const navigate = useNavigate();
-  
+  const handleClick = () => { navigate('/eewdoces/register/clients') }
+
   return(
     <div className='container-main-sales-register'>
       <ArrowLeft to={url} logo={arrow_left} >Meus clientes</ArrowLeft>
       <main className='container-sales-register'>
-        <SearchAndAdd id='search-sales' placeholder={'Buscar por clientes'} handleSearch = {() => alert('Function in construction...')} handleAdd={() => navigate('/eewdoces/register/clients')}/>
-        <Client/>
+        <SearchAndAdd id='search-sales' placeholder={'Buscar por clientes'} handleSearch = {() => alert('Function in construction...')} handleAdd={handleClick}/>
+        <Client onClick={handleClick}/>
         
       </main>
       {/* <Navbar/> */}
