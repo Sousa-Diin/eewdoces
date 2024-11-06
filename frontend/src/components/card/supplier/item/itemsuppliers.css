@@ -10,11 +10,19 @@
   background-color: var( --color-gelo-white);
   box-shadow: 0 0 5px var(--color-secondary); 
   transition: background-color 0.3s ease-in-out ; /* Transição de cor */
+  font-size: medium;
+  font-weight: 300;
 }
 
 .sales:hover {
-  background-color: #071739;; /* Cor ao passar o mouse */
-  color: #cdd5db /* Alteração da cor do texto no hover */
+  background-color: var(--color-primary-dark);/* Cor ao passar o mouse */
+  color: #cdd5db ;/* Alteração da cor do texto no hover */
+  
+}
+
+.type-person:hover {
+  background-color: var(--color-primary-light);
+  /* color: var(--color-white-nave); */
 }
 
 .container-status {
@@ -22,12 +30,25 @@
   justify-content:space-between; 
 }
 
+.type-person {
+  background-color: var(--color-secondary);
+  font-size: xx-small;
+  color: var( --color-primary);
+  padding: .2rem;
+  border-radius: 50px;
+}
+
 @media only screen and (min-width:190px) and (max-width:650px) {
  
   .sales{
-    width: 88dvw;
+    width: 90dvw;
     height: 100dvh;
     min-height: 26dvh;
+  }
+
+  .sales:hover,
+  .sales:active {
+    
   }
 }
 
