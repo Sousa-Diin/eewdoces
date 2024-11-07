@@ -16,11 +16,12 @@ function useFetchData(endpoint, method = 'GET', bodyData = null, options = {}) {
       try {
         const config = { method, url: endpoint, ...options };
 
+       
         // Se o método suportar dados no corpo, adiciona bodyData
         if (bodyData && (method === 'POST' || method === 'PUT' || method === 'PATCH')) {
           config.data = bodyData;
         }
-
+        
         const response = await apiClient(config);
         setData(response.data);
       } catch (err) {
@@ -34,7 +35,9 @@ function useFetchData(endpoint, method = 'GET', bodyData = null, options = {}) {
     setLoading(false);
   }, [endpoint, method, bodyData, options]);
 
-  return  {data, loading, error} ;
+  
+  
+  return  {data, loading, setLoading, error} ;
 }
 
 export default useFetchData;

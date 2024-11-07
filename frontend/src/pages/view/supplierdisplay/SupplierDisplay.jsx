@@ -61,10 +61,10 @@ const SupplierDisplay = () => {
 
     const handleClick = () => {navigate('/eewdoces/register/suppliers');}
   
-    const { data, loading, error } = useFetchData('/people');
+    const { data, loading, error, setLoading } = useFetchData('/people');
   
     if (loading) return <LoginSplash/>;
-
+    
     if (error == 'NetWork Error'){
      return <PageNotFound message='A página solicitada não foi encontrada' error={error}/>;
     }
