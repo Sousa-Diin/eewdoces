@@ -1,11 +1,11 @@
-import axios from 'axios';
+import axios from 'axios';/* 
 import dotenv from 'dotenv';
-dotenv.config({ path: '../.env' });  //ajuste do caminho [BUG] corrigir e configurar arquivo dotenv(env) #16
+dotenv.config();  */
 
 
 const apiClient = axios.create({
-  baseURL: process.env.REACT_APP_API_BASE_URL, // Base URL da API
-  timeout: 10000, // Timeout de 10 segundos
+  baseURL: 'http://localhost:4001/', // Base URL da API
+  timeout: 10_000, // Timeout de 10 segundos
   headers: {
     'Content-Type': 'application/json',
   },

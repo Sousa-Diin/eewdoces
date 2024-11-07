@@ -8,10 +8,11 @@ import SearchAndAdd from '../../../components/searchadd/SearchAndAdd';
 import LoginSplash from '../../login/splash/LoginSplash';
 import PageNotFound from '../../error/PageNotFound';
 import { useNavigate } from 'react-router-dom';
+import useFetchData from '../../../hooks/useFetchData';
 
 const SupplierDisplay = () => {
  
-  useEffect(()=>{ document.title="eewdoces | meus fornecedores"},[]);
+  /* useEffect(()=>{ document.title="eewdoces | meus fornecedores"},[]); */
 
   const url = '/eewdoces/register';
   const navigate = useNavigate();
@@ -57,46 +58,29 @@ const SupplierDisplay = () => {
       }
     ]
 
-    const [data, setData] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
 
     const handleClick = () => {navigate('/eewdoces/register/suppliers');}
   
-    useEffect(() => {
-      // Substitua pelo seu endpoint
-      axios
-      .get('http://localhost:4001/people/')
-      .then((response) => {
-        setData(response.data); // Armazena os dados da API
-        console.log(` Data API: ${JSON.stringify(response.data, null, 2)}`);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setError(error.message);
-        setLoading(false);
-      });
-  }, []); // Executa apenas uma vez quando o componente é montado
-    
-      if (loading) return <LoginSplash/>;
+    const { data, loading, error } = useFetchData('/people');
+  
+    if (loading) return <LoginSplash/>;
 
-      if (error == 'NetWork Error'){
-       return <PageNotFound message='A página solicitada não foi encontrada' error={error}/>;
-      }
+    if (error == 'NetWork Error'){
+     return <PageNotFound message='A página solicitada não foi encontrada' error={error}/>;
+    }
         
     
   
   return(
-    <div /* className='container-main-sales' */>
-    <ArrowLeft to={url} logo={arrow_left} style='around' >Meus fornecedores</ArrowLeft>
-      <main className='container-sales-register'>
+    <>
+        <ArrowLeft to={url} logo={arrow_left} style='around' >Meus fornecedores</ArrowLeft>
+        <main className='container-sales-register'>
+          
+          <SearchAndAdd id='search-sales' placeholder={'Buscar por fornecedor'}  handleSearch = {() => alert('Function in construction...')} handleAdd={handleClick}/>
+          <Suppliers arrayList={data} onClick={handleClick}/>
         
-        <SearchAndAdd id='search-sales' placeholder={'Buscar por fornecedor'}  handleSearch = {() => alert('Function in construction...')} handleAdd={handleClick}/>
-        <Suppliers arrayList={data} onClick={handleClick}/>
-      
-      </main>
-      {/* <Navbar/> */}
-    </div>
+        </main>
+    </>
   );
 }
 
