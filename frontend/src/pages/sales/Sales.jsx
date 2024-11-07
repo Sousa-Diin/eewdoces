@@ -5,6 +5,7 @@ import './sales.css';
 import Navbar from '../../components/footer/Navbar';
 import SearchAndAdd from '../../components/searchadd/SearchAndAdd';
 import SalesInfo from '../../components/card/sales/SalesInfo';
+import { useNavigate } from 'react-router-dom';
 
 
 const Sales = () => {
@@ -12,6 +13,7 @@ const Sales = () => {
       document.title = "eewdoces | Vendas"; // Define o título da aba
   }, []); // O array vazio faz com que o título mude apenas na montagem do componente
 
+  const navigate = useNavigate();
   const listSales = [
     {content:"Sales #1"},
     {content:"Sales #2"},
@@ -112,9 +114,9 @@ const Sales = () => {
   
   return(
     <div className='container-main-sales'>
-     <span className='title-sales' >Minhas vendas</span>
+      <span className='title-sales' >Minhas vendas</span>
       <main className='container-sales'>
-        <SearchAndAdd id='search-sales' placeholder={'Buscar por vendas'}/>
+        <SearchAndAdd id='search-sales' placeholder={'Buscar por vendas'} handleSearch = {() => alert('Function in construction...')} handleAdd={() => navigate('/eewdoces/register/orders')}/>
         <SalesInfo arrayList={listSales}/>
         
       </main>

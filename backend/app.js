@@ -1,5 +1,6 @@
 import 'dotenv/config';
 import express from 'express';
+import cors from 'cors';
 import PeopleRoutes from './routes/peopleRoutes.js';
 import ProductsRoutes from './routes/productsRoutes.js';
 import OrderProductRoutes from './routes/orderProductRoutes.js';
@@ -7,6 +8,8 @@ import OrdersRoutes from './routes/ordersRoutes.js';
 import TransactionsRoutes from './routes/transactionsRoutes.js';
 
 const app = express();
+app.use(cors()); // Permite CORS para todas as origens
+/* app.use(cors({ origin: 'http://localhost:5173/eewdoces' })); */
 const port = process.env.WEB_PORT;
 const host = process.env.WEB_HOST;
 

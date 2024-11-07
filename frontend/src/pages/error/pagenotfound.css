@@ -1,0 +1,53 @@
+/* Definição do corpo */
+.container-not-found  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #071739; /* Fundo principal */
+  font-family: 'Arial', sans-serif;
+  color: #f2f2f2;
+}
+
+/* Container do conteúdo */
+.container-not-found > h2, .container-not-found > h3 {
+  text-align: center;
+  margin: 0;
+}
+
+/* Estilização do h2 */
+.container-not-found > h2 {
+  font-size: 2.5rem;
+  color: #a4b5ca;
+  text-shadow: 0px 0px 10px #4b6382, 0px 0px 20px #4b6382;
+  margin-bottom: 10px;
+}
+
+/* Estilização do h3 */
+.container-not-found > h3 {
+  font-size: 2rem;
+  color: #cdd5db;
+  text-shadow: 0px 0px 5px #a4b5ca;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+/* Efeito de animação sutil */
+@keyframes glow {
+  0% {
+    text-shadow: 0px 0px 5px #4b6382;
+  }
+  50% {
+    text-shadow: 0px 0px 15px #a4b5ca, 0px 0px 30px #4b6382;
+  }
+  100% {
+    text-shadow: 0px 0px 5px #4b6382;
+  }
+}
+
+/* Aplicação da animação nos textos */
+.container-not-found > h2, .container-not-found > h3 {
+  animation: glow 2s infinite alternate;
+}

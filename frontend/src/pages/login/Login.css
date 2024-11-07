@@ -2,6 +2,22 @@
   margin: 0;
 }
 
+/* Animação leve */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.login-container-div {
+  animation: fadeIn 1s ease-in-out;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
   .container-login {
     display: flex;

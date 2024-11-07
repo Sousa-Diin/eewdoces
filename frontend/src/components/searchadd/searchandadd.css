@@ -4,9 +4,18 @@
   width: 50%;
   padding: .3em;
   border-radius: 25px;
-  background-color: var(--color-secondary);
+ /*  background-color: var(--color-secondary); */
+ 
+ background-color: #fff;
 }
-.dad-search-container { width: 100%;}
+.dad-search-container { 
+  padding: 1rem;
+  width: 100%; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 
 .dad-search-container img {cursor: pointer; border-radius: 50%;}
 
@@ -15,7 +24,8 @@
   padding-left: 5px;
   height: auto;
   border-radius: 25px;
-  background-color: var(--color-secondary);
+/*   background-color: var(--color-secondary); */
+background-color: #fff;
   z-index: 0;
 }
 

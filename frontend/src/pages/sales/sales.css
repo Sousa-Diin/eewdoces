@@ -5,8 +5,9 @@
   padding-top:1rem;
   width: 100dvw;
   height: 100dvh;
-  
-  padding-bottom: 7%;
+  top: 0;
+  max-height: 100%;
+  bottom: -1rem;
 }
 
 .container-sales {
@@ -37,7 +38,8 @@
 .search-container img { cursor: pointer;}
 
 .title-sales {
-  margin: 0 0 0 1.2rem;
+ /*  margin: 0 0 0 1.2rem; */
+ top: 0;
 }
 
 

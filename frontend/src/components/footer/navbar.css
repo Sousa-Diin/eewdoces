@@ -9,24 +9,29 @@
   background-color: #071739;
   color: white;
   padding: 10px 0;
-  z-index: 1;
+  z-index: 0;
+}
+
+.navbar-footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* Estilos para os itens do menu */
 .nav-item {
-  flex: 1;
+
   text-align: center;
 }
 
 /* Estilos para o botão de adicionar */
 .add-button {
-  position: relative;
-  bottom: 22px; /* Centraliza o botão */
-  text-align: center;
-  z-index: 1;
+  position: absolute;
+  bottom: 1rem; /* Centraliza o botão */
+  
 }
 
-.add-button button {
+.add-button  {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,14 +55,12 @@
   font-size: 24px;
 }
 
-#store-menu  img:hover, #product-menu img:hover, #bag-menu img:hover, #list-menu img:hover { 
-  color: #fda282;
-}
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media only screen and (min-width:190px) and (max-width:650px) {
   .navbar-footer {
     padding: 15px 0;
+    z-index: 0;
   }
 
   .add-button { bottom: 25px; /* Centraliza o botão */}
@@ -66,7 +69,6 @@
     width: 50px;
     height: 50px;
   }
-  
 
   #store-menu, #product-menu {
     width: 20px;

@@ -1,0 +1,32 @@
+import React, { useEffect } from 'react';
+
+import './productdisplay.css';
+import arrow_left from '../../../assets/icons/chevron-left.svg';
+import SearchAndAdd from '../../../components/searchadd/SearchAndAdd';
+import ArrowLeft from '../../arrowleft/ArrowLeft';
+import { useNavigate } from 'react-router-dom';
+import Product from '../../../components/card/product/Product';
+
+
+const ProductDisplay = () => {
+ 
+  useEffect(()=>{ document.title="eewdoces | meus produtos"},[]);
+
+  const url = '/eewdoces/register';
+  const navigate = useNavigate();
+  const handleClick = () => { navigate('/eewdoces/register/products') }
+  
+  return(
+    <div /* className='container-main-sales' */>
+    <ArrowLeft to={url} logo={arrow_left} style='around' >Meus produtos</ArrowLeft>
+      <main className='container-sales-register'>
+        <SearchAndAdd id='search-sales' placeholder={'Buscar por produto'}  handleSearch = {() => alert('Function in construction...')} handleAdd={handleClick}/>
+        <Product onClick={handleClick}/>
+        
+      </main>
+      {/* <Navbar/> */}
+    </div>
+  );
+}
+
+export default ProductDisplay;
