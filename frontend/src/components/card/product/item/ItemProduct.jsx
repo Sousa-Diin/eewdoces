@@ -7,7 +7,7 @@ const ItemProduct = ({item, index}) => {
     <div key={index} className="sales">
       <span>ID: {item.id}</span> 
       <h6>{item.describe}</h6>
-      <span>Phone: {item.price}</span>
+      <span>R$: {item.price}</span>
       <p>{item.stock}</p>
     </div>
   )

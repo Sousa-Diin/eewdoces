@@ -16,8 +16,8 @@
   padding: 1rem;
   width:auto;
   gap: .3rem;
-  min-height: 8dvh;
-  font-size: x-small;
+  min-height: 5dvh;
+  font-size: small;
   font-weight: 200;
   border-radius: 50px;
 }
