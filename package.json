@@ -15,6 +15,7 @@
   "dependencies": {
     "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
     "eewdoces": "file:",
     "frontend": "file:",
     "react": "^18.3.1",
