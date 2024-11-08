@@ -30,14 +30,14 @@ function useFetchData(endpoint, method = 'GET', bodyData = null, options = {}) {
         setLoading(false);
       }
     };
-
-    fetchData();
+    
     setLoading(false);
-  }, [endpoint, method, bodyData, options]);
-
+    fetchData();
+  }, [endpoint, method, /* bodyData */, /* options */]);
+/*  */
   
   
-  return  {data, loading, setLoading, error} ;
+  return  {data, loading, error} ;
 }
 
 export default useFetchData;

@@ -5,7 +5,6 @@
   padding-top:1rem;
   width: 100dvw;
   height: 100dvh;
-  
   border-radius: 30px;
   padding-bottom: 7%;
 }
@@ -30,6 +29,13 @@
   margin: 0 0 0 1.2rem;
 }
 
+.filter {
+  cursor: pointer;
+  position: absolute;
+  padding: 1.5rem;
+  right: .2rem;
+  top: 3rem;
+}
 
 @media only screen and (min-width: 190px) and (max-width:650px){
   
@@ -44,6 +50,10 @@
   .search-container input {
     min-width: 70%;
 
+  }
+
+  .filter {
+    
   }
 
 }

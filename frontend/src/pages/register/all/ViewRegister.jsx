@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 import './viewregister.css';
 import arrow_left from '../../../assets/icons/arrow-left.svg';
@@ -9,8 +9,7 @@ import { Link } from 'react-router-dom';
 import ArrowLeft from '../../arrowleft/ArrowLeft';
 
 function ViewRegister () {
-  useEffect(()=>{ document.title='eewdoces | Cadastros'},[]);
-
+ document.title='eewdoces | Cadastros';
 
   const url = '/eewdoces/main/store'
 
@@ -24,7 +23,7 @@ function ViewRegister () {
           {
             IconResgisterList.map((item, index) => {
               return (
-                  <Link  style={{ textDecoration: 'none' }} to={item.path} className={item.style} key={index}>
+                  <Link  style={{ textDecoration: 'none' }} to={item.path +'/?order=asc'} className={item.style} key={index}>
                     <img src={item.src}/>
                     <span>{item.name}</span>
                   </Link>

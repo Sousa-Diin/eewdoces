@@ -3,7 +3,7 @@ import "./loginsplash.css";
 const LoginSplash = () => {
  
   return (
-    <div div className="body-spin">{/* */}
+    <div className="body-spin">
         <div className="loading-screen">
           <div className="loading-circle"></div>
           <h2>Carregando...</h2>

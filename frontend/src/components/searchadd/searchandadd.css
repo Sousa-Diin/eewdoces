@@ -10,6 +10,7 @@
 }
 .dad-search-container { 
   padding: 1rem;
+  margin-bottom: .5rem;
   width: 100%; 
   display: flex;
   flex-direction: row;
@@ -33,8 +34,11 @@ background-color: #fff;
   outline: none;  
 }
 
-.search-container img { width: 25px; height: auto; padding-right: .3rem; }
+.search-container img { width: 26px; height: auto; padding-right: .3rem; }
 
+.search-container img { display: flex; }
+
+.search-container-show-img { display: none; }
 
 @media only screen and (min-width: 190px) and (max-width:650px){
   .search-container{

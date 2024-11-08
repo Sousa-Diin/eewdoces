@@ -39,7 +39,7 @@
 }
 
 /* Título da tela de carregamento */
-.loading-screen h2 {
+.loading-screen > h2 {
   color: #cdd5db;
   font-size: 1.5rem;
   opacity: 0.9;

@@ -14,7 +14,7 @@ const Suppliers = ({arrayList, onClick}) => {
         : 
         arrayList.map((item, index) => {
           return ( 
-            <ItemSuppliers item={item} index={index}/>
+            <ItemSuppliers key={index} item={item} index={index}/>
           )
         }) 
       }
