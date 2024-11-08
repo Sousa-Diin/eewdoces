@@ -2,9 +2,8 @@
 .sales{
   display: flex;
   flex-flow: column nowrap;
-  width: 22dvw;
-  padding: .5rem;
-  min-height: 10vh;/* 
+  min-width: 24.3%;
+  min-height: 12%;/* 
   min-height: 18dvh; */
   border-radius: 10px;
   background-color: var( --color-gelo-white);
@@ -27,7 +26,6 @@
 
 .container-status {
   display:flex; 
-  justify-content:space-between; 
 }
 
 .type-person {
@@ -38,17 +36,23 @@
   border-radius: 50px;
 }
 
+.suppliers-name {
+  font-weight: 400;
+  font-size: medium;
+}
+.suppliers-phone {
+  font-size: small;
+}
+.suppliers-adress {
+  font-size: x-small;
+}
+
 @media only screen and (min-width:190px) and (max-width:650px) {
  
   .sales{
     width: 90dvw;
-    height: 100dvh;
-    min-height: 26dvh;
+
   }
 
-  .sales:hover,
-  .sales:active {
-    
-  }
 }
 
