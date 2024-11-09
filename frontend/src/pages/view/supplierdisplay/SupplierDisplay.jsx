@@ -85,12 +85,12 @@ const SupplierDisplay = () => {
 
   const [supplier, setSupplier] = useState([]);
 
-  filterSupp = data.filter( dt => dt.type_person === field)
+ /*  filterSupp = data.filter( dt => dt.type_person === field)
     .sort( (a,b) => searchParams
     .get('order') === 'desc' 
       ? (b.name > a.name ? 1 : -1) 
       :  (a.name > b.name ? 1 : -1)
-  ); //.sort((a, b) => (a.name > b.name ? 1 : -1))
+  );  *///.sort((a, b) => (a.name > b.name ? 1 : -1))
   
 
 
