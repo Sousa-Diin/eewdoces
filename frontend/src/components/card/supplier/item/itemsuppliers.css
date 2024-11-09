@@ -44,7 +44,9 @@
   font-size: small;
 }
 .suppliers-adress {
-  font-size: x-small;
+  font-size: small;
+  color: var(--color-primary-light);
+  font-weight: 500;
 }
 
 

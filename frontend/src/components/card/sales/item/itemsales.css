@@ -22,12 +22,37 @@
   justify-content:space-between; 
 }
 
+.status-sales {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  height: 40px;
+  padding: .4rem;
+  background-color: rgb(253, 168, 40,.1);
+  border-radius: 50px;
+  color:var(--color-button-dark);
+}
+
+.circule {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  /* background-color: #e64a19; */
+  background-color:var(--color-button-dark);
+}
+
 @media only screen and (min-width:190px) and (max-width:650px) {
  
   .sales{
     width: 88dvw;
     height: auto;
     min-height: 170px;
+  }
+
+  .status-sales {
+    width: 35%;
   }
 }
 
