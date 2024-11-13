@@ -9,6 +9,12 @@
   background-color: rgb(75, 99, 130,.5);
 }
 
+@media only screen and  (min-width:185px) and (max-width:650px){
+  .body-spin {
+    max-width: 100dvw;
+    max-height: 100dvh;
+  }
+}
 /* Tela de carregamento */
 .loading-screen {
   display: flex;
