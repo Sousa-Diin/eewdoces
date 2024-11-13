@@ -30,29 +30,62 @@
   width: 45%;
   height: 40px;
   padding: .4rem;
-  background-color: rgb(253, 168, 40,.1);
   border-radius: 50px;
-  color:var(--color-button-dark);
+  background-color: rgb(34, 34, 34,.2);
 }
 
 .circule {
   width: 15px;
   height: 15px;
   border-radius: 50px;
-  /* background-color: #e64a19; */
-  background-color:var(--color-button-dark);
+  background-color: rgb(34, 34, 34,.5) /* Default */
+  /* background-color:var(--color-button-dark); */
 }
 
+.circule-pendente { background-color:var(--color-button-dark); } 
+
+.pendente {
+  background-color: rgb(253, 168, 40,.1);
+  color:var(--color-button-dark);
+}
+
+.circule-cancelado { background-color:var(--vermelho-padrão); } 
+
+.cancelado {
+  background-color: var(--vermelho-sangue-cc);
+  /* color:var(--vermelho-sangue); */
+  color:var(--vermelho-padrão);
+}
+
+.circule-concluido { background-color:var(--verde-neon); } 
+
+.concluido {
+  background-color: var(--verde-grama-cc);
+  color:var(--verde-grama);
+}
+
+.date-sales {
+  width: 45%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(7, 23, 57, 0.4);
+}
 @media only screen and (min-width:190px) and (max-width:650px) {
  
   .sales{
     width: 88dvw;
-    height: auto;
-    min-height: 170px;
+    height: auto;/* 
+    min-height: 170px; */
   }
 
   .status-sales {
     width: 35%;
+  }
+
+  .date-sales {
+    width: 30%;
   }
 }
 

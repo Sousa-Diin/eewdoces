@@ -19,6 +19,19 @@
 
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   /* font-family: 'Roboto', sans-serif; */
+
+  /* Tons de vermelho */
+--vermelho-escuro: #8B0000;       /* DarkRed */
+--vermelho-sangue: #B22222;       /* FireBrick */
+--vermelho-sangue-cc: rgb(178, 34, 34,.4);       /* FireBrick */
+--vermelho-padrão: #FF0000;       /* Red */
+
+/* Tons de verde */
+--verde-grama: #7CFC00;         /* LawnGreen */
+--verde-grama-cc: rgb(124, 252, 0,.2);         /* LawnGreen */
+--verde-neon: #39FF14;          /* Neon Green */
+
+
 }
 
 *{

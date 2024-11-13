@@ -90,3 +90,13 @@ export const  IconResgisterList = [
     },
 ];
 
+export const listSales = [
+  {name:"Persona teste",date:'05/09/2024', value: 36, status: "pendente"},
+  {name:"Persona teste",date:'01/09/2024', value: 12, status: "pendente"},
+  {name:"Isadora",date:'21/10/2024', value: 24, status: "concluido"},
+  {name:"João",date:'15/10/2024', value: 12, status: "pendente"},
+  {name:"Custodio",date:'10/08/2024', value: 24, status: "concluido"},
+  {name:"Jubileu",date:'10/09/2024', value: 12, status: "concluido"},
+  {name:"Eustaquio",date:'13/11/2024', value: 36, status: "cancelado"},
+ 
+];
