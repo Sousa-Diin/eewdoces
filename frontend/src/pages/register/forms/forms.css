@@ -1,0 +1,55 @@
+/* FORMULARIO DE CLIENTE */
+
+.people-form {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  overflow-y: scroll;
+}
+
+.type_person{
+  display: flex;
+  gap: 1rem;
+}
+
+#register-client{
+  width: 80%;
+  height: 12%;
+  border-radius: 50px;
+  background-color: var(--color-primary);
+  color: var(--color-white-nave);
+}
+
+.name, .phone, .address {
+  width: 80%;
+  height: 23%;
+  display:flex ;
+  flex-flow: column nowrap;
+}
+
+#name, #phone, #address {
+  border-radius: 50px;
+  height: 43%;
+  border: 1px solid var(--color-primary-cc);
+}
+
+/* FORMULARIO DE FORNECEDOR */
+
+/* FORMULARIO DE PRODUTO */
+
+/* FORMULARIO DE PEDIDO */
+
+@media only screen and (min-width:185px) and (max-width:650px){
+
+/* FORMULARIO DE CLIENTE */
+
+/* FORMULARIO DE FORNECEDOR */
+
+/* FORMULARIO DE PRODUTO */
+
+/* FORMULARIO DE PEDIDO */
+}

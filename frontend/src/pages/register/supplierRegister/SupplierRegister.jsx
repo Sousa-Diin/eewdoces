@@ -4,6 +4,7 @@ import './supplierregister.css';
 import arrow_left from '../../../assets/icons/chevron-left.svg';
 
 import ArrowLeft from '../../arrowleft/ArrowLeft';
+import PeopleForm from '../forms/PeopleForm';
 
 
 const SupplierRegister = () => {
@@ -16,10 +17,8 @@ const SupplierRegister = () => {
   return(
     <div /* className='container-main-sales' */>
     <ArrowLeft to={url} logo={arrow_left} style='around' >Cadastre um fornecedor</ArrowLeft>
-      <main className='container-sales-register'>
-        {/* <SearchAndAdd id='search-sales' placeholder={'Buscar por vendas'}/> */}
-       
-        
+      <main className='container-sales-register'>     
+        <PeopleForm type = 'supplier' titleBtn={'Salvar fornecedor'}/>
       </main>
       {/* <Navbar/> */}
     </div>
