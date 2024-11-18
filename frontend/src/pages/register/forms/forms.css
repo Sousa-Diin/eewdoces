@@ -5,38 +5,68 @@
   height: 100%;
   max-height: 400px;
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  overflow-y: scroll;
+  gap: .5rem;
+ /*  background-color: black; */
 }
 
-.type_person{
+.section-form-people{
   display: flex;
-  gap: 1rem;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: .5rem;
+  justify-content: space-around;
+  width: 95%;
+  height: 25%;
+  
+ /*  background-color: aqua;  teste*/
 }
 
 #register-client{
-  width: 80%;
-  height: 12%;
+ 
+  width: 100%;
+  height: 38%;
+  margin-bottom: -2.2rem;
   border-radius: 50px;
   background-color: var(--color-primary);
   color: var(--color-white-nave);
 }
 
 .name, .phone, .address {
-  width: 80%;
-  height: 23%;
+  /* background-color: antiquewhite; */
   display:flex ;
+  height: 90%;
+  justify-content: flex-end;
   flex-flow: column nowrap;
 }
 
 #name, #phone, #address {
   border-radius: 50px;
-  height: 43%;
+  height: 45%;
+ /*  max-height: 12%; */
   padding: .5rem;
   border: 1px solid var(--color-primary-cc);
 }
+
+.name{
+  
+  flex:  3; 
+}
+
+.phone {
+  
+  flex:  3; /* flex-grow: 1, flex-shrink: 2, flex-basis: 40% */
+}
+.address{
+  flex: 6;
+}
+
+#register-client {
+  flex: 4;
+}
+
 
 /* FORMULARIO DE FORNECEDOR */
 
@@ -49,6 +79,30 @@
 /* FORMULARIO DE CLIENTE */
 
 /* FORMULARIO DE FORNECEDOR */
+.section-form-people {
+  flex-flow: column;
+  justify-content: space-between;
+  height: auto;
+}
+
+.section-form-people-2{
+  height: 30%;
+}
+
+.name, .phone, .address {
+  width: 100%;
+  flex: 1;
+}
+
+.people-form {
+  height: 100%;
+}
+
+#register-client{
+  min-height: 22%;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
 
 /* FORMULARIO DE PRODUTO */
 

@@ -38,6 +38,7 @@ const PeopleForm = ({type, titleBtn}) => {
   };
   return (
     <form className="people-form" onSubmit={handleSubmit}>
+      <div className="section-form-people">
       <div className="name">
         <label htmlFor="name">Nome</label>
         <input type="text" name="people" id="name" 
@@ -54,14 +55,19 @@ const PeopleForm = ({type, titleBtn}) => {
           required
         />
       </div>
-      <div className="address">
-        <label htmlFor="address">Endereço </label>
-        <input type="text" name="people" id="address" 
-          value={formData.address}
-          onChange={handleChange} />
+      </div>
+      <div className="section-form-people">
+        <div className="address">
+          <label htmlFor="address">Endereço </label>
+          <input type="text" name="people" id="address" 
+            value={formData.address}
+            onChange={handleChange} />
+        </div>
+        
+        <button type="submit" id="register-client">{titleBtn}</button>
+       
       </div>
      
-      <button type="submit" id="register-client">{titleBtn}</button>
     </form>
   );
 }
