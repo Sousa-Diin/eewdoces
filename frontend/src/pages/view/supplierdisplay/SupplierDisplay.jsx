@@ -75,7 +75,7 @@ const SupplierDisplay = () => {
           input={searchTerm}
         />
         <img src={filter} onClick={ handleChangeParamsOrder } alt="filtro icon" className="filter" />
-        <Suppliers arrayList={ [...supplier, ...supplierStorage ]} onClick={handleClick}/>
+        <Suppliers arrayList={ [...supplier || [], ...supplierStorage ]} onClick={handleClick}/>
       
       </main>
     </>
