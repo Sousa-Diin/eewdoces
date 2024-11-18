@@ -16,7 +16,7 @@ const SupplierDisplay = () => {
 
   document.title="eewdoces | meus fornecedores";
 
-  const { sortArray } = useAuth();
+  const { sortArray, supplierStorage } = useAuth();
   const { data, loading, error } = useFetchData('/people');
 
   const [supplier, setSupplier] = useState([]);
@@ -75,7 +75,7 @@ const SupplierDisplay = () => {
           input={searchTerm}
         />
         <img src={filter} onClick={ handleChangeParamsOrder } alt="filtro icon" className="filter" />
-        <Suppliers arrayList={ supplier } onClick={handleClick}/>
+        <Suppliers arrayList={ [...supplier, ...supplierStorage ]} onClick={handleClick}/>
       
       </main>
     </>

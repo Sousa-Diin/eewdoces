@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 
 import './forms.css';
+import { useAuth } from "../../../provider/AuthContextProvider";
 
 const PeopleForm = ({type, titleBtn}) => {
+  const { userList, addPeople } = useAuth();
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -22,7 +25,9 @@ const PeopleForm = ({type, titleBtn}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Dados da pessoa:", formData);
+    console.log("Dados do userList:", userList);
     // Aqui você pode enviar os dados para um backend ou API
+    addPeople(formData);
     alert("Pessoa salva com sucesso!");
      // Limpar os campos do formulário
     setFormData({

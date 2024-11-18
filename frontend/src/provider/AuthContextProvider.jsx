@@ -1,12 +1,58 @@
-import React, {createContext, useContext, useState} from "react";
+import React, {createContext, useContext, useEffect, useState} from "react";
 import { listSales } from "../config/layout/ListItens";
 import useFetchData from '../hooks/useFetchData.js';
 
 const AuthContext = createContext({});
 
+const setLocalStorage = (key, value) => {
+  try {
+    localStorage.setItem(key,JSON.stringify(value));
+  } catch (error) {
+    console.error("Erro ao salvar no localStorage:", error);
+  }
+};
+
+const getLocalStorage = (key) => {
+  try {
+    const storeData = localStorage.getItem(key);
+    return storeData 
+      ? JSON.parse(storeData) 
+      : [];
+  } catch (error) {
+    console.error("Erro ao recuperar do localStorage:", error);
+    return [];
+    }
+};
+
 const AuthContextProvider = ({children}) => {
  
-  /* const [endpoint, setEndPoint] = useState({}); */
+  
+  const [sales, setSales] = useState(listSales);
+  const [userList, setUserList] = useState(() => getLocalStorage('userList'));
+  const [clientStorage, setClientStorage] = useState(userList.filter((dt) => dt.type_person === 'client'));
+  const [supplierStorage, setSupplierStorage] = useState(userList.filter((dt) => dt.type_person === 'supplier'));
+
+  // Sincroniza o estado com o localStorage
+  useEffect(() => {
+    if (userList) {
+      setLocalStorage("userList", userList);
+    }
+  }, [userList]);
+
+  const addPeople = (user) =>{
+    try {
+      if (user){
+        setUserList((prevList) => [
+          ...prevList, 
+          user
+        ]);
+      }else{
+        throw new Error('Error adding user. Ensure the object is not empty.');
+      }
+    } catch (error) {
+      console.error("Erro ao recuperar do localStorage:", error.message);
+    }
+  };
 
   const sortArray = (array, params) => {
     // Cria uma cópia do array para evitar mutação
@@ -21,10 +67,17 @@ const AuthContextProvider = ({children}) => {
   
   
 
-  const [sales, setSales] = useState(listSales);
 
   return( 
-    <AuthContext.Provider value={{ sales, setSales, sortArray }}>
+    <AuthContext.Provider value={{ 
+      sales, 
+      setSales, 
+      sortArray, 
+      userList, 
+      addPeople,
+      clientStorage,
+      supplierStorage
+    }}>
       {children}
     </AuthContext.Provider>
   );
