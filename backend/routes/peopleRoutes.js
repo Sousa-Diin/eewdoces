@@ -28,4 +28,21 @@ router.get('/:id', async (req, res) => {
   }
 });
 
+router.post('/', async (req, res) => {
+  const { body } = req;
+  console.log('Body: ', body);
+  const columnsArray = ['name', 'type_person', 'phone', 'address']; // array base;
+
+  /*  Verifica se o obj da req esta na ordem certa, usando o array base 
+      e retornando um array [] com os elememto na posição correta com a função "reduce" 
+  */
+  const valuesArray = columnsArray.reduce((acc, columnName) =>{
+    acc.push(body[columnName]);
+    return acc;
+  }, []);
+
+  await new PeopleRepository().insertOne(valuesArray);
+  res.status(200).send('people added');
+});
+
 export default router;

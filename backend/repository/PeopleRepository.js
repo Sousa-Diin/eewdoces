@@ -34,7 +34,23 @@ class PeopleRepository extends BaseRepository{
       throw error;
     }
   }
- 
+
+  async insertOne(valuesArray){ 
+    try {
+      const result = await super.insertOne(
+        'people',
+        ['name',
+          'type_person',
+          'phone',
+          'address',
+        ],
+      valuesArray
+      );
+      return result;
+    } catch (error) {
+      throw error;
+    }
+  }
 }
 
 export default PeopleRepository;

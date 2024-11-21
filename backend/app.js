@@ -8,8 +8,10 @@ import OrdersRoutes from './routes/ordersRoutes.js';
 import TransactionsRoutes from './routes/transactionsRoutes.js';
 
 const app = express();
-app.use(cors()); // Permite CORS para todas as origens
+//app.use(cors()); // Permite CORS para todas as origens
 /* app.use(cors({ origin: 'http://localhost:5173/eewdoces' })); */
+app.use(express.json());
+
 const port = process.env.WEB_PORT;
 const host = process.env.WEB_HOST;
 
