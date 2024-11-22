@@ -27,13 +27,26 @@ const apiClient = axios.create({
 apiClient.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response && error.response.status === 401) {
-      // Redirecionar para login ou outra ação se o token for inválido/expirado
-      // window.location.href = '/login';
+    if (error.response) {
+      const status = error.response.status;
+      switch (status) {
+        case 401:
+          console.error('Não autorizado. Redirecionando para login...');
+          // Redirecione para login, se necessário
+          break;
+        case 500:
+          console.error('Erro interno do servidor.');
+          break;
+        default:
+          console.error(`Erro ${status}: ${error.response.data.message}`);
+      }
+    } else {
+      console.error('Erro de conexão:', error.message);
     }
     return Promise.reject(error);
   }
 );
+
 
 export default apiClient;
 

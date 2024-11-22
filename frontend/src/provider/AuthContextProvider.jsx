@@ -1,7 +1,7 @@
 import React, {createContext, useContext, useEffect, useState} from "react";
 import { listSales } from "../config/layout/ListItens";
 import useFetchData from '../hooks/useFetchData.js';
-
+import { registerPeople } from "../service/peopleService.js";
 const AuthContext = createContext({});
 
 const setLocalStorage = (key, value) => {
@@ -36,16 +36,19 @@ const AuthContextProvider = ({children}) => {
   useEffect(() => {
     if (userList) {
       setLocalStorage("userList", userList);
+      
     }
   }, [userList]);
 
-  const addPeople = (user) =>{
+  const addPeople = async (user) =>{
     try {
       if (user){
         setUserList((prevList) => [
           ...prevList, 
           user
         ]);
+      //enviar os dados para um backend ou API
+      await registerPeople(user);
       }else{
         throw new Error('Error adding user. Ensure the object is not empty.');
       }

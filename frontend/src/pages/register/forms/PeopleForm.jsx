@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import './forms.css';
 import { useAuth } from "../../../provider/AuthContextProvider";
+import { registerPeople } from "../../../service/peopleService";
 
 const PeopleForm = ({type, titleBtn}) => {
   const { userList, addPeople } = useAuth();
@@ -22,7 +23,7 @@ const PeopleForm = ({type, titleBtn}) => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Dados da pessoa:", formData);
     console.log("Dados do userList:", userList);
