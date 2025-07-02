@@ -5,7 +5,7 @@ class PeopleRepository extends BaseRepository{
     try{
         const selectAllPeople = await super.getAll(
           'people',
-          ['name',
+          ['id','name',
             'type_person',
             'phone',
             'address'
@@ -46,6 +46,15 @@ class PeopleRepository extends BaseRepository{
         ],
       valuesArray
       );
+      return result;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  async updatePeople (data){
+    try {
+      const result = await super.updatePeople('people', data);
       return result;
     } catch (error) {
       throw error;

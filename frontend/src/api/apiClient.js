@@ -5,7 +5,7 @@ dotenv.config();  */
 
 const apiClient = axios.create({
   baseURL: 'http://localhost:4001/', // Base URL da API
-  timeout: 10_000, // Timeout de 10 segundos
+  timeout: 30_000, // Timeout de 10 segundos
   headers: {
     'Content-Type': 'application/json',
   },

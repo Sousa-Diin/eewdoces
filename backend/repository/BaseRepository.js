@@ -64,6 +64,61 @@ class BaseRepository {
 
   }
 
+  async updatePeople (table, objUpdated){
+    /* const client = await pool.connect()
+    try {
+      // Gere a query dinamicamente
+      const setColumns = Object.keys(objUpdaed)
+      .map((key, index) => `${key} = $${index + 1}`)
+      .join(', '); // Gera algo como: "name = $1, phone = $2"
+
+      const values = Object.values(objUpdaed); // Valores a serem usados na query 
+
+      const queryText = `UPDATE ${table} SET ${setColumns} WHERE = ${objUpdaed.id}`;
+
+      await pool.query('BEGIN TRANSACTION');
+      await pool.query(queryText, values);
+      await pool.query('COMMIT');
+
+    } catch (error) {
+      await pool.query('ROLLBACK');
+      console.error('Erro ao atualizar dados:', error);
+      throw error;
+    }finally{
+      client.release();
+    } */
+  const client = await pool.connect();
+  try {
+    // Extraia o ID e remova-o do objeto de atualização
+    const { id, ...columnsToUpdate } = objUpdated;
+    if (!id) {
+      throw new Error("O campo 'id' é obrigatório para atualização.");
+    }
+
+    // Gere as colunas dinâmicas para a query
+    const setColumns = Object.keys(columnsToUpdate)
+      .map((key, index) => `${key} = $${index + 1}`) // Ex.: "name = $1, phone = $2"
+      .join(', ');
+
+    const values = [...Object.values(columnsToUpdate), id]; // Inclua o id no final
+    const queryText = `UPDATE ${table} SET ${setColumns} WHERE id = $${values.length}`;
+
+    // Executa a transação
+    await client.query('BEGIN');
+    await client.query(queryText, values);
+    await client.query('COMMIT');
+  } catch (error) {
+    await client.query('ROLLBACK');
+    console.error('Erro ao atualizar dados:', error.message);
+    throw error;
+  } finally {
+    client.release();
+  }
+}
+
+
+ // }
+
 }
 
 

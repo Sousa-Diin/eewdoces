@@ -42,7 +42,36 @@ router.post('/', async (req, res) => {
   }, []);
 
   await new PeopleRepository().insertOne(valuesArray);
-  res.status(200).send('people added');
+  res.status(200).send('Sucess: people adding.');
 });
+
+router.put('/:id', async (req, res) =>{
+  try {
+    const { id, body } = req;
+    // Faz a consulta no BD
+    const element = await new PeopleRepository().getById(id);
+    //Cria um modelo
+    const columnsArray = ['name', 'type_person', 'phone', 'address'];
+
+    console.log(element);
+    //Atualiza os campos e retorna um objeto
+    if ( element ) {
+      element = columnsArray.reduce((acc, param) => {
+        acc[param] = body[param] || element[param];
+        return acc; 
+      },{});
+    }
+    //Atualiza os dados no BD
+    await new PeopleRepository().updatePeople(element);   
+    console.log(element);
+    res.status(200).send('Sucess: elemet updated.');
+    return element;
+  } catch (error) {
+    res.status(500).send('Erro ao atulizar os dados');
+  }
+  
+
+});
+
 
 export default router;
